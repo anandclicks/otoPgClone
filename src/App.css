@@ -630,10 +630,7 @@ border-radius: 10px;
     height: 120px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) ;
   }
-  .allAmenties{
-    justify-content: space-between;
 
-  }
   .Facelity{
     width: 70px;
     flex-direction: column;
