@@ -446,10 +446,10 @@ border-radius: 10px;
     font-size: 14.50px;
   }
   .aboutPgtTitle, .roomDtlsTitle, .foodMenuTitle, .amentiesTitle, .nearByTitle{
-    font-size: 24px;
+    font-size: 22px;
   }
   .foodMenuDips , .foodMenuDipsTwo{
-    font-size: 12px;
+    font-size: 10px;
   }
   .AmentiName{
     font-size: 14px;
@@ -500,6 +500,9 @@ border-radius: 10px;
   }
   .Amenties{
     height: 300px;
+  }
+  .roomDtlsDips{
+    font-size: 10px;
   }
 }
 
@@ -577,6 +580,22 @@ border-radius: 10px;
     width: 180px;
     height: 120px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) !important;
+  }
+  .allAmenties{
+    justify-content: space-between;
+
+  }
+  .Facelity{
+    width: 70px;
+    flex-direction: column;
+    gap: 2px;
+    margin: 20px 0px;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .AmentiName {
+    font-size: 12px;
   }
 }
 
