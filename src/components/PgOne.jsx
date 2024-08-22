@@ -33,8 +33,8 @@ const PgOne = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition <= 1830) {
-        console.log(scrollPosition)
+      if (scrollPosition <= '1830') {
+      
         setisFixed(true);
       } else {
         setisFixed(false);
@@ -51,7 +51,7 @@ const PgOne = () => {
     <div className='pgMain'>
       <div className="btnsForMobile">
         <div className="Schedul">
-        <i class="fa-brands fa-square-whatsapp whatsappIcon"></i> Schedule Visit
+        <i className="fa-brands fa-square-whatsapp whatsappIcon"></i> Schedule Visit
         </div>
         <div className="selectRoom">
           Select Room
@@ -62,15 +62,15 @@ const PgOne = () => {
         {/* pgHeader  */}
         {/* quick links  */}
         <div className='quickLinksFroSmallDevice'>
-          <p className='linksContainer'><p className='activeLink '>Home</p><i class="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i class="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
+          <p className='linksContainer'><p className='activeLink '>Home</p><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
         </div>
         <div className="pgHeader">
           <div className='pgHeaderLeft'>
-          <h1 className='PgName'>Oto Gem <i class="fa-regular fa-heart"></i></h1>
+          <h1 className='PgName'>Oto Gem <i className="fa-regular fa-heart"></i></h1>
           <p className='pgLocation'>No.61/1, West jones Roads , West saidapet, Chennai-600015</p>
           </div>
           <div className="pgHeaderRight">
-            <div className="locationBtn"><i class="fa-solid fa-location-dot"></i> View in map</div>
+            <div className="locationBtn"><i className="fa-solid fa-location-dot"></i> View in map</div>
           </div>
         </div>
         {/* pg images  */}
@@ -78,8 +78,8 @@ const PgOne = () => {
           <img className='propertyImages' src={`/Allcitiesindividualpgs/otoomegatownshippicturevideo/${imageNum}.jpg`} alt="" />
           {/* image ctrl  */}
           <div className="imgCtrl">
-          <i onClick={prevImage} class="fa-solid fa-angle-left prev"></i>
-          <i onClick={nextIamge} class="fa-solid fa-chevron-right next"></i>
+          <i onClick={prevImage} className="fa-solid fa-angle-left prev"></i>
+          <i onClick={nextIamge} className="fa-solid fa-chevron-right next"></i>
           </div>
           {/* pointer  */}
           <div className="imageCircle">
@@ -100,7 +100,7 @@ const PgOne = () => {
         </div>
         {/* quick links  */}
         <div className='quickLinksFroLargeDevice'>
-          <p className='linksContainer'><p className='activeLink '>Home</p><i class="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i class="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
+          <p className='linksContainer'><p className='activeLink '>Home</p><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
         </div>
         {/* about pg  */}
         <div className="aboutPg">
@@ -192,7 +192,7 @@ const PgOne = () => {
         </div>
         {/* map  */}
         <div className="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7006.435479989718!2d77.343354!3d28.593244!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM1JzM1LjciTiA3N8KwMjAnNDUuMyJF!5e0!3m2!1sen!2sin!4v1724254111623!5m2!1sen!2sin"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7006.435479989718!2d77.343354!3d28.593244!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM1JzM1LjciTiA3N8KwMjAnNDUuMyJF!5e0!3m2!1sen!2sin!4v1724254111623!5m2!1sen!2sin"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* nearby location  */}
         <div className="nearBy">
@@ -207,7 +207,7 @@ const PgOne = () => {
           </div>
       </div>
       {/* pg rigtht  */}
-      <div className="right d-none d-lg-block">
+      <div className="right ">
         <div className={`bookignDtls ${isFixed ? 'fixed' : 'absolute'}`} >
           {/* upper part  */}
          <div className="formDetailsUpper">
