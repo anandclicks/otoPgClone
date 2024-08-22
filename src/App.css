@@ -92,9 +92,9 @@ span {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.singleSharing , .doubleSharing {
-  height: 130px;
-  width: 250px;
+.singleSharing , .doubleSharing, .TripleSharing {
+  height: 120px;
+  width: 212px;
   background-color: #ececec;
   clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100% );
   display: flex;
@@ -110,8 +110,19 @@ span {
   background-color:#00afef36 ;
 }
 .roomRent{
+
+  overflow: scroll;
+}
+.roomRent::-webkit-scrollbar {
+  display: none;
+}
+.roomRendWrapper{
+  width: 200%;
   display: flex;
-  gap: 50px;
+  gap: 30px;
+}
+.roomRendWrapper::-webkit-scrollbar {
+  display: none;
 }
 .roomType{
   font-size: 19px;
@@ -412,6 +423,44 @@ border-radius: 10px;
 .btnsForMobile{
   display: none;
 }
+.usisex{
+  font-size: 12px;
+  background-color: #76ecc9;
+
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+
+  width: 70px;
+  margin-left: 0px;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 90% , 0% 100%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -576,10 +625,10 @@ border-radius: 10px;
     gap: 10px;
     
   }
-  .singleSharing , .doubleSharing {
+  .singleSharing , .doubleSharing, .TripleSharing {
     width: 180px;
     height: 120px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) !important;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) ;
   }
   .allAmenties{
     justify-content: space-between;
@@ -596,6 +645,28 @@ border-radius: 10px;
   }
   .AmentiName {
     font-size: 12px;
+  }
+  .quickLinksFroLargeDevice{
+    display: none;
+  }
+  .quickLinksFroSmallDevice , .linksContainer{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .whatsappIcon{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #30ef00;
+  }
+  .pgLocation{
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .roomRent{
+    overflow: scroll;
+  }
+  .roomRent::-webkit-scrollbar {
+    display: none;
   }
 }
 

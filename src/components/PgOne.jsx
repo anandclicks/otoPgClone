@@ -47,7 +47,7 @@ const PgOne = () => {
     <div className='pgMain'>
       <div className="btnsForMobile">
         <div className="Schedul">
-          Schedule Visit
+        <i class="fa-brands fa-square-whatsapp whatsappIcon"></i> Schedule Visit
         </div>
         <div className="selectRoom">
           Select Room
@@ -56,6 +56,10 @@ const PgOne = () => {
       {/* pg left  */}
       <div className="left">
         {/* pgHeader  */}
+        {/* quick links  */}
+        <div className='quickLinksFroSmallDevice'>
+          <p className='linksContainer'><p className='activeLink '>Home</p><i class="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i class="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
+        </div>
         <div className="pgHeader">
           <div className='pgHeaderLeft'>
           <h1 className='PgName'>Oto Gem <i class="fa-regular fa-heart"></i></h1>
@@ -85,9 +89,13 @@ const PgOne = () => {
             <div  className={`circle ${(imageNum == 8) ? 'active' : ''}`}></div>
             <div  className={`circle ${(imageNum == 9) ? 'active' : ''}`}></div>
           </div>
+          {/* unisex logo  */}
+          <div className="usisex">
+            Unisex
+          </div>
         </div>
         {/* quick links  */}
-        <div>
+        <div className='quickLinksFroLargeDevice'>
           <p className='linksContainer'><p className='activeLink '>Home</p><i class="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i class="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
         </div>
         {/* about pg  */}
@@ -100,6 +108,7 @@ const PgOne = () => {
           <h2 className='roomDtlsTitle'>Room <span>Details</span></h2>
           <p className='roomDtlsDips'>All room type have some variants that are larger in size or have extra Amenities.</p>
           <div className='roomRent'>
+            <div className="roomRendWrapper">
             <div className="singleSharing">
               <h3 className='roomType'>Single Room</h3>
               <small className='startsFrom'>starting from</small>
@@ -109,6 +118,12 @@ const PgOne = () => {
             <h3 className='roomType'>Single Room</h3>
               <small className='startsFrom'>starting from</small>
               <p className='price'>₹1113/<small className='month'>month</small></p>
+            </div>
+            <div className="TripleSharing">
+            <h3 className='roomType'>Triple Room</h3>
+              <small className='startsFrom'>starting from</small>
+              <p className='price'>₹5113/<small className='month'>month</small></p>
+            </div>
             </div>
           </div>
         </div>
