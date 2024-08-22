@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import PgOne from './components/pgOne'
+import PgOne from './components/PgOne'
 
 function App() {
   const [count, setCount] = useState(0)
