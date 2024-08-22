@@ -5,10 +5,10 @@ const DoubleSharingDtls = () => {
     <div>
        <div className="roomSharigDetails">
             <div className="roomQuilty">
-              <input type="checkbox" /> Room Type 1
+              <input type="checkbox" /> Room Type 2
             </div>
             {/* .rent  */}
-            <h3 className='rent'>₹5000/month</h3>
+            <h3 className='rent'>₹11113/month</h3>
           </div>
     </div>
   )

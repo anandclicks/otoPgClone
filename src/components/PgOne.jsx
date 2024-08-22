@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SingleSharingRentDtls from './SingleSharingRentDtls'
 import DoubleSharingDtls from './DoubleSharingDtls'
+import TripleSharing from './TripleSharing'
 
 
 const PgOne = () => {
@@ -16,12 +17,15 @@ const PgOne = () => {
       setimageNum(prev => prev +1)
     }
   }
-  const [sharingStatus, setsharingStatus] = useState(true)
+  const [sharingStatus, setsharingStatus] = useState('single')
   const SinglSharing = ()=> {
-    setsharingStatus(true)
+    setsharingStatus('single')
   }
   const doubleSharing = ()=> {
-    setsharingStatus(false)
+    setsharingStatus('double')
+  }
+  const tripleSharing = ()=> {
+    setsharingStatus('triple')
   }
 
   // form postion manage 
@@ -117,7 +121,7 @@ const PgOne = () => {
             <div className="doubleSharing">
             <h3 className='roomType'>Single Room</h3>
               <small className='startsFrom'>starting from</small>
-              <p className='price'>₹1113/<small className='month'>month</small></p>
+              <p className='price'>₹11113/<small className='month'>month</small></p>
             </div>
             <div className="TripleSharing">
             <h3 className='roomType'>Triple Room</h3>
@@ -210,8 +214,10 @@ const PgOne = () => {
          <h4 className='BookignDtlsTitlw'>Select Sharing Type</h4>
           {/* sharing btn  */}
           <div className="sharingOption">
-            <div onClick={SinglSharing} className={`single ${sharingStatus ? 'activeBtn' : ''}`}>Single Sharing</div>
-            <div onClick={doubleSharing} className={`single ${sharingStatus ? '' : 'activeBtn'}`}>Double Sharing</div>
+            <div onClick={SinglSharing} className={`single ${sharingStatus == 'single' ? 'activeBtn' : ''}`}>Single Sharing</div>
+            <div onClick={doubleSharing} className={`single ${sharingStatus == 'double' ? 'activeBtn' :''}`}>Double Sharing</div>
+            <div onClick={tripleSharing} className={`single ${sharingStatus == 'triple' ? 'activeBtn' :''}`}>Triple Sharing
+            </div>
           </div>
           {/* room sharing dtls  */}
          <div className="roomsharingdtls">
@@ -220,7 +226,9 @@ const PgOne = () => {
           <i className='lightAndItalic'>You can change your room type before onboarding.</i>
           </div>
           {/* room sharing and rent details  */}
-          {sharingStatus ? <SingleSharingRentDtls/> : <DoubleSharingDtls/> }
+          {sharingStatus === 'single' ? <SingleSharingRentDtls/> : '' }
+          {sharingStatus === 'double' ? <DoubleSharingDtls/> : ''}
+          {sharingStatus === 'triple' ? <TripleSharing/> : ''}
           
          </div>
          </div>
