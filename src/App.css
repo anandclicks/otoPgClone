@@ -215,8 +215,8 @@ span {
   min-width: 100%;
   width: auto;
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .nearBy{
   margin-top: 30px;
@@ -439,7 +439,12 @@ border-radius: 10px;
   text-align: center;
 }
 
-
+.locationSemiWrapper {
+  width: 200%;
+  display: flex;
+  overflow: auto;
+  gap: 20px;
+}
 
 
 
@@ -593,7 +598,7 @@ border-radius: 10px;
   }
   .locationWrapper{
    display: flex;
-   overflow: hidden;
+
   }
   .pgMain{
     position: relative;
@@ -665,6 +670,9 @@ border-radius: 10px;
   .roomRent::-webkit-scrollbar {
     display: none;
   }
+.location{
+  width: 160px;
+}
 }
 
 
