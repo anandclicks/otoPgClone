@@ -255,6 +255,7 @@ border-radius: 10px;
 }
 .fixed{
   margin-left: 5%;
+  margin-top: 2%;
   position: fixed;
   width: 37%;
   height: 820px;
@@ -279,7 +280,7 @@ border-radius: 10px;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden; 
-  top: 1800px;
+  top: 1900px;
 }
 
 
@@ -445,11 +446,90 @@ border-radius: 10px;
   overflow: auto;
   gap: 20px;
 }
-
-
-
-
-
+/* header two css  */
+.headerTwo{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 10px #00000059;
+  z-index: 99;
+  background-color: #FFF;
+  padding: 0px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTwoLogo{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.headerTwoLogo img{
+  width: 65px;
+  cursor: pointer;
+}
+.CityListBtn{
+  height: 60%;
+  width: 200px;
+  background-color: #00afef33;
+  color: #444444;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  padding:0px  20px;
+  outline: none;
+  cursor: pointer;
+}
+.CityListBtn option {
+  background-color: #FFF;
+  border: none;
+  height: 600px;
+  font-size: 15px;
+}
+.CityListBtn option:hover {
+  background-color: #FFF;
+}
+.optionsAndSearchWrapper{
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.searchbox{
+  height: 60%;
+  width: 500px;
+  background-color: #eeeeeed0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #8f8f8f;
+  gap: 10px;
+}
+.signInBtn {
+  height: 60%;
+  width: 120px;
+  background-color: #00AEEF;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.forLargeScreen{
+  display: flex;
+}
+.forMobileScreen{
+  display: none;
+}
+.headerTwoLoginIcon{
+  display: none;
+}
 
 
 
@@ -558,8 +638,38 @@ border-radius: 10px;
   .roomDtlsDips{
     font-size: 10px;
   }
-
+  .headerTwo{
+    height: 70px;
+  }
+  .CityListBtn{
+    width: 184px;
+    font-size: 14px;
+  }
+  .searchbox{
+    width: 390px;
+  }
+  .signInBtn{
+    width: 98px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .searchbox{
+    font-size: 14px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* phone  query  */
 @media (max-width : 600px) {
@@ -653,7 +763,9 @@ border-radius: 10px;
   }
   .quickLinksFroSmallDevice , .linksContainer{
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
   }
   .whatsappIcon{
     font-size: 30px;
@@ -671,7 +783,49 @@ border-radius: 10px;
     display: none;
   }
 .location{
-  width: 160px;
+  width: 150px;
+}
+/* hedaer two css  */
+.headerTwo{
+  padding: 0 10px;
+}
+.forLargeScreen{
+  display: none;
+}
+.forMobileScreen{
+  display: flex;
+}
+.headerTwoLoginIcon {
+  display: inline;
+}
+.signInBtn{
+  display: none;
+}
+.searachBoxOnMobile{
+  width: 200px;
+  background-color: #f7f7f7d3;
+  height: 70%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0px 10px ;
+  gap: 10px;
+  justify-content: space-between;
+}
+.findPgIcon{
+  margin-right: 10px;
+}
+.searchIconONmonile{
+  background-color: #00AEEF;
+  padding: 7px;
+  border-radius: 5px;
+  color: #FFF;
+}
+.signUpIonOnMobile{
+  color: #00AEEF;
+  font-size: 25px;
+  margin-right: 10px;
 }
 }
 

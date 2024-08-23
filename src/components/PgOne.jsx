@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SingleSharingRentDtls from './SingleSharingRentDtls'
 import DoubleSharingDtls from './DoubleSharingDtls'
 import TripleSharing from './TripleSharing'
+import HeaderTwo from './HeaderTwo'
 
 
 const PgOne = () => {
@@ -48,6 +49,8 @@ const PgOne = () => {
     };
   }, []);
   return (
+    <>
+    <HeaderTwo/>
     <div className='pgMain'>
       <div className="btnsForMobile">
         <div className="Schedul">
@@ -243,6 +246,7 @@ const PgOne = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
