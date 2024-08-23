@@ -530,6 +530,12 @@ border-radius: 10px;
 .headerTwoLoginIcon{
   display: none;
 }
+.signUpIonOnMobile{
+  display: none;
+}
+.searachBoxOnMobile{
+  display: none;
+}
 
 
 
