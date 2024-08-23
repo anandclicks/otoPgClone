@@ -125,17 +125,17 @@ span {
   display: none;
 }
 .roomType{
-  font-size: 19px;
+  font-size: 13px;
   color: #141414;
   font-weight: 400;
 }
 .startsFrom{
-  font-size: 15px;
+  font-size: 10px;
   color: #7a7a7a;
   font-weight: 500;
 }
 .price{
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   color: #333333;
 }
@@ -592,7 +592,7 @@ border-radius: 10px;
     font-size: 10px;
   }
   .AmentiName{
-    font-size: 14px;
+    font-size: 12px;
   }
   .AmentiImg{
     height: 30px;
@@ -615,7 +615,7 @@ border-radius: 10px;
     font-size: 16px;
   }
   .single {
-    font-size: 13px;
+    font-size: 11px;
   }
   .policyTitle{
     font-size: 15px;
@@ -627,10 +627,10 @@ border-radius: 10px;
     font-size: 13px;
   }
   .rent{
-    font-size: 12px;
+    font-size: 10px;
   }
   .visit, .confirm {
-    font-size: 14px;
+    font-size: 12px;
   }
   .formNum{
     font-size: 14px;

@@ -117,17 +117,17 @@ const PgOne = () => {
           <div className='roomRent'>
             <div className="roomRendWrapper">
             <div className="singleSharing">
-              <h3 className='roomType'>Single Room</h3>
+              <h3 className='roomType'>Single Sharing</h3>
               <small className='startsFrom'>starting from</small>
               <p className='price'>₹18285/<small className='month'>month</small></p>
             </div>
             <div className="doubleSharing">
-            <h3 className='roomType'>Single Room</h3>
+            <h3 className='roomType'>Double Sharing </h3>
               <small className='startsFrom'>starting from</small>
               <p className='price'>₹11113/<small className='month'>month</small></p>
             </div>
             <div className="TripleSharing">
-            <h3 className='roomType'>Triple Room</h3>
+            <h3 className='roomType'>Triple Sharing</h3>
               <small className='startsFrom'>starting from</small>
               <p className='price'>₹5113/<small className='month'>month</small></p>
             </div>
@@ -201,13 +201,13 @@ const PgOne = () => {
         <div className="nearBy">
           <h2 className='nearByTitle'>Nearby <span>Location</span></h2>
           <p className='nearbyDips'>Oto Marydale is strategically placed nearby key office spaces and access roads</p>
-        </div>
         <div className="locationWrapper">
           <div className="location"></div>
           <div className="location"></div>
           <div className="location"></div>
           <div className="location"></div>
           </div>
+        </div>
       </div>
       {/* pg rigtht  */}
       <div className="right ">
