@@ -5,7 +5,7 @@ import TripleSharing from './TripleSharing'
 import HeaderTwo from './HeaderTwo'
 
 
-const PgOne = () => {
+const PgOne = (prop) => {
   // imges controller 
   const [imageNum, setimageNum] = useState(6)
   const prevImage = ()=> {
@@ -69,16 +69,16 @@ const PgOne = () => {
         </div>
         <div className="pgHeader">
           <div className='pgHeaderLeft'>
-          <h1 className='PgName'>Oto Gem <i className="fa-regular fa-heart"></i></h1>
-          <p className='pgLocation'>No.61/1, West jones Roads , West saidapet, Chennai-600015</p>
+          <h1 className='PgName'>{prop.pgTitle }<i className="fa-regular fa-heart"></i></h1>
+          <p className='pgLocation'>{prop.pgLocation}</p>
           </div>
           <div className="pgHeaderRight">
-            <div className="locationBtn"><i className="fa-solid fa-location-dot"></i> View in map</div>
+            <a href={`${prop.mapUrl}`} className="locationBtn"><i className="fa-solid fa-location-dot"></i> View in map</a>
           </div>
         </div>
         {/* pg images  */}
         <div className="pgImageContainer">
-          <img className='propertyImages' src={`/Allcitiesindividualpgs/otoomegatownshippicturevideo/${imageNum}.jpg`} alt="" />
+          <img className='propertyImages' src={`${prop.imageUrl}${imageNum}.jpg`} alt="" />
           {/* image ctrl  */}
           <div className="imgCtrl">
           <i onClick={prevImage} className="fa-solid fa-angle-left prev"></i>
@@ -119,17 +119,17 @@ const PgOne = () => {
             <div className="singleSharing">
               <h3 className='roomType'>Single Sharing</h3>
               <small className='startsFrom'>starting from</small>
-              <p className='price'>₹18285/<small className='month'>month</small></p>
+              <p className='price'>₹{prop.singleSharingPrice}/<small className='month'>month</small></p>
             </div>
             <div className="doubleSharing">
             <h3 className='roomType'>Double Sharing </h3>
               <small className='startsFrom'>starting from</small>
-              <p className='price'>₹11113/<small className='month'>month</small></p>
+              <p className='price'>₹{prop.doubleSharingPrice}/<small className='month'>month</small></p>
             </div>
             <div className="TripleSharing">
             <h3 className='roomType'>Triple Sharing</h3>
               <small className='startsFrom'>starting from</small>
-              <p className='price'>₹5113/<small className='month'>month</small></p>
+              <p className='price'>₹{prop.tripleSharingPrice}/<small className='month'>month</small></p>
             </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ const PgOne = () => {
         </div>
         {/* map  */}
         <div className="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7006.435479989718!2d77.343354!3d28.593244!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM1JzM1LjciTiA3N8KwMjAnNDUuMyJF!5e0!3m2!1sen!2sin!4v1724254111623!5m2!1sen!2sin"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src={`${prop.liveLocationUrl}`}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* nearby location  */}
         <div className="nearBy">
@@ -229,9 +229,9 @@ const PgOne = () => {
           <i className='lightAndItalic'>You can change your room type before onboarding.</i>
           </div>
           {/* room sharing and rent details  */}
-          {sharingStatus === 'single' ? <SingleSharingRentDtls/> : '' }
-          {sharingStatus === 'double' ? <DoubleSharingDtls/> : ''}
-          {sharingStatus === 'triple' ? <TripleSharing/> : ''}
+          {sharingStatus === 'single' ? <SingleSharingRentDtls singleSharingPrice={prop.singleSharingPrice}/> : '' }
+          {sharingStatus === 'double' ? <DoubleSharingDtls doubleSharingPrice={prop.doubleSharingPrice}/> : ''}
+          {sharingStatus === 'triple' ? <TripleSharing tripleSharingPrice={prop.tripleSharingPrice}/> : ''}
           
          </div>
          </div>

@@ -42,6 +42,7 @@
   border: 1px solid #00AEEF;
   color: #00AEEF;
   border-radius: 10px;
+  text-decoration: none !important;
 }
 
 .pgHeaderRight{
@@ -693,6 +694,7 @@ border-radius: 10px;
   .PgName{
     font-size: 22px;
   }
+ 
   .locationBtn{
     height: 26px;
     width:115px;
@@ -703,6 +705,7 @@ border-radius: 10px;
     align-items: center;
     justify-content: center;
     display: flex;
+
   }
   .pgImageContainer {
     height: 220px;

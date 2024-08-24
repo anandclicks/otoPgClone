@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DoubleSharingDtls = () => {
+const DoubleSharingDtls = (prop) => {
   return (
     <div>
        <div className="roomSharigDetails">
@@ -8,7 +8,9 @@ const DoubleSharingDtls = () => {
               <input type="checkbox" /> Room Type 2
             </div>
             {/* .rent  */}
-            <h3 className='rent'>₹11113/month</h3>
+            <h3 className='rent'>
+              {prop.doubleSharingPrice ? `₹${prop.doubleSharingPrice}/month` : 'Not Avalable'}
+              </h3>
           </div>
     </div>
   )
