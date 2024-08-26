@@ -186,6 +186,9 @@
   justify-content: center;
   gap: 30px;
 }
+.prasenceWrapper::-webkit-scrollbar {
+  display: none;
+}
 .gurugram{
   margin-left: 13%;
 }
@@ -1481,6 +1484,9 @@ border-radius: 10px;
 .footer{
   height: 50vh;
   background-color: #00afef98;
+}
+.footerParts {
+  justify-content: start;
 }
 .semiFooter{
   height: 40vh;

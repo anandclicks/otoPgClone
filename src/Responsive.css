@@ -3,6 +3,15 @@
 /* for laptop  */
 @media (max-width : 1450px) {
   /* navabr css  */
+  .searchBox {
+    height: 70px !important;
+  }
+  .searchIconAndBtn{
+    width: 170px;
+  }
+  .searchIconAndBtn .btn {
+    padding: 0 13px;
+  }
 .navLinks{
   font-size: 12px;
 }
@@ -141,9 +150,18 @@ width: 90%;
   display: none;
   left: 0;
 }
-
-
-
+.footerLinkTitleAndLink{
+  font-size: 13px;
+}
+.footerLinkTitleAndLink h3 {
+  font-size: 18px;
+}
+.footerLastScTitle h4 {
+  font-size: 15px;
+}
+.footerDips{
+  font-size: 14px;
+}
 
 
 
@@ -349,6 +367,7 @@ width: 90%;
 }
 .searchIconAndBtn{
   gap: 0px;
+  width: 220px;
 }
 .searchBox{
   height: 62px;
