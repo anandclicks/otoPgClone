@@ -1,0 +1,715 @@
+
+
+/* for laptop  */
+@media (max-width : 1450px) {
+  /* navabr css  */
+.navLinks{
+  font-size: 12px;
+}
+.singinOfHomeNav{
+  width: 120px;
+  height: 40px;
+}
+.homeTitle{
+  font-size: 38px;
+}
+.homeDips{
+width: 90%;
+  font-size: 15px;
+  padding-right: 0px;
+}
+.placeholder{
+  font-size: 14px;
+}
+.searchBox{
+  height: 78px;
+}
+.homeright img {
+  width: 90%;
+}
+.mainWrapperDiv{
+  overflow: scroll;
+}
+.sectionTitle {
+  font-size: 20px;
+}
+.MainPoint{
+  font-size: 38px;
+}
+.subPoint{
+  font-size: 19px;
+  text-transform: uppercase;
+}
+/* show case section  */
+.ShowCase{
+  height: 60vh;
+}
+.showCaseTitle{
+  font-size: 38px;
+}
+.data{
+  gap: 210px;
+}
+/* memory section  */
+.polygonForMemory .box h3 {
+  font-size: 37px;
+  line-height: 50px;
+}
+.polygonForMemory .box h4 {
+  font-size: 78px;
+  line-height: 50px;
+}
+
+/* ratting  */
+.feedbackSection{
+  width: 100%;
+}
+.feedbackTitle{
+  font-size: 38px;
+}
+.one ,.two , .three , .four , .five  {
+  font-size: 26px;
+}
+.feedbackText{
+  font-size: 16px;
+}
+
+/* pg find form  */
+.inputBox{
+  margin-top: 10px;
+}
+.pgFinderForm input {
+  height: 50px;
+  border-radius: 8px;
+}
+.lbtn{
+  font-size: 12px;
+}
+.colivingBTn{
+  height: 50px;
+  font-size: 14px;
+  width: 130px;
+}
+.coliving{
+  padding: 4px;
+  font-size: 11px;
+  background-color: transparent;
+}
+.pgFinderForm{
+  overflow: scroll;
+}
+.filterNavTitle{
+  font-size: 20px;
+}
+.filterTypeTitle{
+  font-size: 14px;
+}
+.filterBox{
+  min-height: 100px;
+}
+.inputWrapper p {
+  font-size: 13px;
+}
+.rangeValue{
+  font-size: 14px;
+  
+}
+.firstValue , .lasValue {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PgCard {
+  width: 30%;
+  height: 450px;
+}
+.pgcardMainimg{
+  height: 280px;
+}
+.allPgCards {
+  padding-right: 0px;
+}
+.NoidaAllPgMain{
+  padding-right: 0px;
+  padding-left: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* pg css  */
+  .PgName {
+    font-size: 20px;
+  }
+  .pgLocation{
+    font-size: 11px;
+  }
+  .locationBtn{
+    font-size: 11px;
+  }
+  .linksContainer {
+    font-size: 11px;
+  }
+  .AboutPgDips{
+    font-size: 11px;
+  }
+  .roomType{
+    font-size: 15px;
+  }
+  .startsFrom{
+    font-size: 12px;
+  }
+  .price{
+    font-size: 16px;
+  }
+  .wallet{
+    font-size: 14.50px;
+  }
+  .aboutPgtTitle, .roomDtlsTitle, .foodMenuTitle, .amentiesTitle, .nearByTitle{
+    font-size: 22px;
+  }
+  .foodMenuDips , .foodMenuDipsTwo{
+    font-size: 10px;
+  }
+  .AmentiName{
+    font-size: 12px;
+  }
+  .AmentiImg{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+  }
+  .Facelity {
+    width: 150px;
+  }
+  .allAmenties{
+    gap: 10px;
+  }
+  .nearbyDips{
+    font-size: 12px;
+  }
+  .bookignDtls{
+    height: calc(100vh - 108px);
+  }
+  .BookignDtlsTitlw{
+    font-size: 16px;
+  }
+  .single {
+    font-size: 11px;
+  }
+  .policyTitle{
+    font-size: 15px;
+  }
+  .lightAndItalic{
+    font-size: 13px;
+  }
+  .roomQuilty{
+    font-size: 13px;
+  }
+  .rent{
+    font-size: 10px;
+  }
+  .visit, .confirm {
+    font-size: 12px;
+  }
+  .formNum{
+    font-size: 14px;
+  }
+  .pgImageContainer{
+    height: 380px;
+  }
+  .Amenties{
+    height: 300px;
+  }
+  .roomDtlsDips{
+    font-size: 10px;
+  }
+  .headerTwo{
+    height: 70px;
+  }
+  .CityListBtn{
+    width: 184px;
+    font-size: 14px;
+  }
+  .searchbox{
+    width: 390px;
+  }
+  .signInBtn{
+    width: 98px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .searchbox{
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone  query  */
+@media (max-width : 600px) {
+  /* navbar css  */
+.navLinks{
+  display: none;
+}
+.menuBtn , .userIcon{
+  display: inline;
+  font-size: 26px;
+}
+
+.Navlogo{
+  width: 100%;
+  justify-content: space-between;
+}
+.logoImg{
+  width: 80px !important;
+}
+.home{
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+}
+.homeleft {
+  height: 100%;
+  width: 100%;
+}
+.homeright {
+  display: none;
+}
+.homeTitle{
+  font-size: 24px ;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.homeDips{
+  font-size: 11px;
+  padding: 20px;
+  padding-right: 10px;
+  text-align: center;
+  width: 100%;
+}
+.placeholder{
+  font-size: 11px;
+}
+.btn{
+  padding: 0px 10px;
+}
+.span{
+  display: none;
+}
+.searchIconAndBtn{
+  gap: 0px;
+}
+.searchBox{
+  height: 62px;
+  margin-top: 15px;
+}
+.mainWrapperDiv::-webkit-scrollbar {
+  display: none;
+}
+.prasenceWrapper{
+  width: 215%;
+  overflow: scroll;
+}
+/* hero one won't show in mobile  */
+.sectionOne, .sectionTwo{
+  display: none;
+}
+.ShowCase{
+  height: 40vh;
+}
+.data{
+  justify-content: space-between;
+  gap: 0;
+}
+.showCaseTitle{
+  font-size: 25px;
+}
+.numberBox span {
+  font-size: 26px;
+}
+g {
+  display: none;
+}
+/* memory section  */
+.makeMemory {
+  height: 40vh;
+  align-items: center;
+  justify-content: start;
+}
+.polygonForMemory {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.makeMemory img {
+  height: 100%;
+  object-fit: contain;
+}
+.polygonForMemory .box h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 100px;
+}
+.polygonForMemory .box h4 {
+  font-size: 23px;
+  line-height: 20px;
+}
+.polygonForMemory .box .btn {
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* ratting  */
+.FeedBackrowTwo , .FeedBackrow {
+
+  width: 100%;
+  padding: 0px;
+}
+.feedbackContent {
+  width: 80%;
+}
+.allREeviews{
+  width: 100%;
+}
+.feedbackTitle{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.reviewsOne, .reviewsTwo, .reviewsThree, .reviewsForth, .reviewsFifth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px ;
+}
+/* semi footer  */
+.semiFooter{
+  flex-direction: column;
+  align-items: start;
+}
+.linkTitle{
+  margin-top: 20px;
+}
+.semiFooter{
+  height: inherit;
+}
+.pgFinderForm {
+  width: 90%;
+  padding: 10px;
+}
+.findpgformTitle{
+  font-size: 18px;
+}
+.colivingBTn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.PgCardSide{
+  width: 100%;
+}
+.PgCard {
+  width: 100%;
+}
+.pgCardSide{
+padding: 10px;
+  width: 100%;
+}
+.allPgCards{
+  padding: 0px;
+}
+.headingRow{
+  margin-top: 25%;
+  padding: 0px;
+}
+.noidaAllPgHeading{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.quickLinks{
+  margin-bottom: 0px;
+}
+/* .filterSide{
+  width: 100%;
+  position: absolute;
+  transform: 0.3s ;
+  z-index: 99;
+  bottom: -10%;
+  height: 600px;
+  left: 0;
+} */
+.filterWrapper{
+  box-shadow: none;
+  border-radius: 50px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.priceRange{
+  height: 100px;
+}
+.filterNavbar{
+  height: 60px;
+}
+.closeFilter{
+  font-size: 22px;
+  color: #00AEEF;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+}
+.filterSideVisible {
+  bottom: -10%;
+  width: 100%;
+  position: fixed;
+  transform: 0.3s ;
+  z-index: 99;
+  bottom: -10%;
+  height: 600px;
+  left: 0;
+  transition: 0.3s;
+}
+.filterSideinVisible {
+  bottom: -110%;
+  width: 100%;
+  position: fixed;
+  transform: 0.3s ;
+  z-index: 99;
+  height: 600px;
+  left: 0;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* pg css  */
+  .container {
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .pgMain{
+    flex-direction: column;
+    padding: 15px;
+  }
+  .left , .right {
+    height: 50%;
+    width: 100%;
+  }
+  .right{
+    display: none;
+  }
+  .PgName{
+    font-size: 22px;
+  }
+ 
+  .locationBtn{
+    height: 26px;
+    width:115px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
+  .pgImageContainer {
+    height: 220px;
+  }
+  .Amenties {
+    height: auto;
+  }
+  .map {
+    margin-top: 30px;
+  }
+  .locationWrapper{
+   flex-wrap: wrap;
+  }
+  .pgMain{
+    position: relative;
+  }
+  .btnsForMobile{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+
+  }
+  .Schedul , .selectRoom {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    z-index: 999;
+  }
+  .selectRoom{
+    background-color: #00AEEF;
+    color: #FFF;
+  }
+  .roomRent{
+    display: flex;
+    gap: 10px;
+    
+  }
+  .singleSharing , .doubleSharing, .TripleSharing {
+    width: 180px;
+    height: 120px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) ;
+  }
+
+  .Facelity{
+    width: 70px;
+    flex-direction: column;
+    gap: 2px;
+    margin: 20px 0px;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .AmentiName {
+    font-size: 12px;
+  }
+  .quickLinksFroLargeDevice{
+    display: none;
+  }
+  .quickLinksFroSmallDevice , .linksContainer{
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
+  }
+  .whatsappIcon{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #30ef00;
+  }
+  .pgLocation{
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .roomRent{
+    overflow: scroll;
+  }
+  .roomRent::-webkit-scrollbar {
+    display: none;
+  }
+.location{
+  width: 150px;
+}
+/* hedaer two css  */
+.headerTwo{
+  padding: 0 10px;
+}
+.forLargeScreen{
+  display: none;
+}
+.forMobileScreen{
+  display: flex;
+}
+.headerTwoLoginIcon {
+  display: inline;
+}
+.signInBtn{
+  display: none;
+}
+.searachBoxOnMobile{
+  width: 200px;
+  background-color: #f7f7f7d3;
+  height: 70%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0px 10px ;
+  gap: 10px;
+  justify-content: space-between;
+}
+.findPgIcon{
+  margin-right: 10px;
+}
+.searchIconONmonile{
+  background-color: #00AEEF;
+  padding: 7px;
+  border-radius: 5px;
+  color: #FFF;
+}
+.signUpIonOnMobile{
+  color: #00AEEF;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.signUpIonOnMobile{
+  display: inline;
+}
+}
+
+

@@ -6,12 +6,879 @@
   box-sizing: border-box;
   font-family: "poppins";
 }
+
+/* home css started  */
+.Navbar{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navlogo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Navlogo img {
+  width: 60px;
+}
+.navLinks{
+  display: flex;
+  gap: 3vw;
+  list-style: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #5f5f5f;
+  align-items: center;
+}
+.navLinks i {
+  font-size: 19px;
+}
+.singinOfHomeNav{
+  padding: 10px;
+  background-color: #00AEEF;
+  color: #FFF;
+  height: 48px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menuBtn{
+  display: none;
+}
+.userIcon{
+  display: none;
+}
+/* hedaer two postion css  */
+
+
+/* home css started  */
+
+.home{
+  height: 65vh;
+  width: 100%;
+  display: flex;
+
+}
+.homeleft , .homeright {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.homeright img {
+  border-radius: 10px;
+}
+.homeright {
+  display: flex;
+  justify-content: end;
+}
+.homeleft .box {
+  display: flex;
+  flex-direction: column;
+  
+}
+.homeTitle{
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.homeDips{
+  font-size: 18px;
+  background-color: #ee74a360;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 100px;
+  border-radius:8px;
+  width: 75%;
+}
+.searchBox{
+  width: 100%;
+  height: 90px;
+  border: 1px solid #bdbdbd;
+  align-items: center;
+  padding: 0px 0px 0px 10px;
+  color: #6b6b6b;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.searchIconAndBtn{
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+.btn{
+  height: 100%;
+  background-color: #00AEEF;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+}
+.searchIconOfPlaceholderBox{
+  color:#00AEEF ;
+  font-size: 22px;
+  margin-right: 20px;
+}
+/* prasence card  */
+.WrapperDiv{
+  width: 125px;
+  height: 160px;
+  display: flex;
+  overflow: auto;
+  border: 1px solid #dadada;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.hoverMain{
+  display: flex;
+  transition: 0.3s;
+}
+.first , .second {
+  width: 130px;
+  height: 160px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.first img {
+  width: 60%;
+  object-fit: contain;
+}
+
+.WrapperDiv:hover .hoverMain {
+  transform: translateX(-50%);
+  
+}
+.WrapperDiv:hover .cityNameofCard{
+  color: #fff;
+  text-shadow: 0px 0px 10px #00000028;
+}
+.cityNameofCard{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  color: #797979;
+  font-weight: 600;
+  transition: 0.3s;
+ 
+}
+.prasenceWrapper{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.gurugram{
+  margin-left: 13%;
+}
+.greaterNoida{
+  margin-left: 5%;
+}
+
+.first , .second {
+  overflow: hidden;
+}
+/* hero section start  */
+.sectionOne {
+  height: 50vh;
+  padding: 2vh 0;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+
+}
+.sectionOneLeft ,.sectionOneRight {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.ploygon{
+  height: 100%;
+  width: 80%;
+  background-color: lightblue;
+  
+}
+.polygonShape {
+  clip-path: polygon(0% 0%, 100% 15%, 100% 90%, 0% 100%);
+}
+.sectionOneLeft img {
+  width: 70%;
+  position: absolute;
+  z-index: 9;
+  
+  bottom: 4%;
+  transform: rotate(-3deg);
+}
+.sectionTitle {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #6b6b6b;
+}
+.MainPoint{
+  font-size: 55px;
+  font-weight: 200;
+}
+.sectionOneRight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* hero two  */
+.sectionTwo{
+  height: 50vh;
+  padding: 2vh 0;
+  display: flex;
+
+}
+.sectionTwoRight,.sectionTwoLeft {
+  height: 100%;
+  width: 50%;
+}
+.sectionTwoRight .ploygon{
+  background-color: #FED3E3;
+}
+.polygonShapeTwo {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90% );
+}
+.sectionTwoRight {
+  position: relative;
+
+}
+.sectionTwoRight img {
+  position: absolute;
+  height: 100%;
+}
+.sectionTwoLeft{
+  display: flex;
+  align-items: center;
+}
+.sectionTwoRight{
+  display: flex;
+  justify-content: end;
+}
+.section3rdImg{
+  left: -10%;
+  height: 90%;
+  object-fit: contain;
+  margin-bottom: -3%;
+}
+.sectionOne .sectionOneRight , .sectionTwo .box {
+  text-align: center;
+}
+/* show case section  */
+.ShowCase{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.showCaseTitle{
+  font-size: 60px;
+  font-weight: 300;
+  color: #505050;
+  text-align: center;
+}
+.data{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 470px;
+}
+.numberBox {
+  text-align: center;
+}
+.numberBox span {
+  font-size: 65px;
+  font-weight: 300;
+}
+/* make memory  */
+.makeMemory{
+  height: 65vh;
+}
+.polygonForMemory{
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+  background-color: #00afef57;
+}
+.polygonForMemory{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.polygonForMemory img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.polygonForMemory .box {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.polygonForMemory .box h3 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 80px;
+}
+.polygonForMemory .box h4 {
+  font-size: 109px;
+  font-weight: 300;
+  line-height: 80px;
+}
+.polygonForMemory .box .btn {
+  width: 222px;
+  height: 70px;
+  margin-top: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* feedback section  */
+.feedbackSection{
+  height: auto;
+
+}
+.feedbackTitle{
+  font-size: 65px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30px;
+}
+.allREeviews{
+  width: 80%;
+  margin: 0 auto;
+}
+.feedbackContent{
+  width: 430px;
+  clip-path: polygon(0% 0%, 100% 5%, 100% 90%, 0% 100%);
+  padding: 20px;
+ 
+}
+.FeedBackrow{
+  width: 100%;
+}
+.FeedBackrowTwo{
+  justify-content: end;
+  width: 100%;
+  display: flex;
+}
+.firstPoibt{
+  font-size: 40px;
+}
+.feedbackText {
+  font-size: 20px;
+}
+.smallText{
+  text-align: end;
+}
+.one {
+  color: #fbb65cd5;
+  font-size: 34px;
+}
+.two{
+  color: #ff87b3d8;
+  font-size: 34px;
+}
+.three {
+  color: #54afb5d0;
+  font-size: 34px;
+}
+.forth{
+  color: #5CCEF9;
+  font-size: 34px;
+}
+.fifth {
+  color: #AC8FEC;
+  font-size: 34px;
+}
+
+.feedbackContentOne {
+  border:5px solid #fbb65caf;
+  
+}
+.feedbackContentTwo {
+  border:5px solid #ff87b3bb;
+  
+}
+.feedbackContentThree {
+  border: 5px solid #54afb5b4;
+  
+}
+.feedbackContentForth{
+  border: 5px solid #5ccff9b4;
+  
+}
+.feedbackContentFifth{
+  border: 5px solid #ac8fecb7;
+  
+}
+.mobileMenu{
+  height: 30vh;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #a7a7a7;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.navVisible {
+  top: 10%;
+}
+.notVisible {
+  margin-top: -80%;
+}
+.mobileMenu h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.mobileMenu a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  
+}
+.mobileMenu .btns {
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+  gap: 10px;
+
+}
+.bgPrimery,.addProperty {
+  width: 45%;
+  border: none;
+  font-size: 12px;
+}
+.bgPrimery {
+  background-color: #00AEEF;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* form  */
+.pgFinderForm {
+  height: 100vh;
+  width: 60%;
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  transition: 0.3s;
+  padding: 35px;
+}
+.pgFinderFormVisible {
+  margin-left: 0%;
+}
+.pgFinderFormInvisble {
+  margin-left: -100%;
+}
+
+
+ .findpgformTitle{
+  font-size: 28px;
+  font-weight: 400;
+ }
+.coliving{
+  padding: 5px;
+  background-color: #00AEEF;
+  color: #fff;
+  border-radius: 50%;
+}
+.colivingBTn{
+  background-color: #00afef4f;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.inputTitle{
+  font-size: 16px;
+  font-weight: 400;
+}
+.pgFinderForm input {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #00000046;
+  margin-top: 20px;
+}
+.inputBox{
+  margin-top: 40px;
+}
+.pgFinderForm input:focus {
+  outline: 1px solid #00afef62;
+  padding: 0px 10px;
+}
+.lbtn{
+  padding: 10px;
+  background-color: #e2e2e283;
+  cursor: pointer;
+}
+.allLocations{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pgFindSubmitBtn{
+  width: 160px;
+  height: 60px;
+  background-color: #00AEEF;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.pgFindFormClose{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* noida all pg  */
+.NoidaAllPgMain{
+  height: 100vh;
+
+}
+.filterSide{
+  height: 100%;
+  width: 22%;
+  padding-top: 8%;
+}
+.filterWrapper{
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #00000021;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.filterNavbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 20px;
+}
+.filterNavTitle{
+  font-size: 25px ;
+  color: #242424;
+  font-weight: 600;
+}
+.ClearfilterBtn{
+  height: 35px;
+  width: 110px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #00AEEF;
+  border: 1px solid #00AEEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.filterTypeTitle{
+  font-size: 16px;
+  font-weight: 500;
+}
+.filterBox{
+  
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; 
+  border-bottom: 1px solid #d1d1d1;
+}
+.filterTypeTitle{
+  font-size: 20px;
+  color: #333333;
+}
+.inputWrapper{
+  display: flex;
+  gap: 15px ;
+  font-size: 17px;
+  color: #363636;
+  margin-top: 15px;
+
+}
+.inputWrapper input {
+ height: 25px;
+ width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.priceRange {
+  height: 200px;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+.priceRange{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.rangeValue{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.range{
+  width: 80%;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+.firstValue , .lasValue {
+  width: 120px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #494949;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.NoidaAllPgMain{
+  display: flex;
+}
+.pgCardSide{
+  display: flex;
+  padding-top: 10%;
+  width: 78%;
+  overflow: scroll;
+
+}
+.PgCard{
+ 
+  position: relative;
+}
+
+.pgCardSide::-webkit-scrollbar {
+  display: none;
+}
+.noidaAllPgHeading{
+  font-size: 26px;
+  font-weight: 400;
+}
+.quickLinks a{
+  text-decoration: none;
+}
+.quickLinks{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.headingRow{
+  padding: 20px;
+  padding-top: 0px;
+}
+/* card design  */
+.PgCard{
+  height: 475px;
+  width: 305px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px #0000004b;
+  
+}
+.allPgCards{
+  padding: 20px;
+}
+.pgcardMainimg {
+  height: 305px;
+  width: 100%;
+  background-color: #d8d8d8;
+}
+.pgcardMainimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.cardTitle{
+  padding: 15px;
+  height: 85px;
+  border-bottom: 1px solid #b9b9b9;
+}
+.cardTitle h4 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.cardTitle p {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.price-discount{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 10px;
+}
+.startsIn{
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+}
+.priceVal{
+  font-size: 19px;
+}
+.discount{
+  padding: 10px;
+  background-color: #00f0a883;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 8px;
+}
+.pgcardMainimg{
+  position: relative;
+}
+.pgCardImgController{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+.allPgCards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.filterIconBox{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 9;
+  background-color: #00AEEF;
+  color: #fff;
+  border-radius: 8px;
+  margin: 15px;
+  font-size: 14px;
+}
+.filterIconBox i {
+  font-size: 17px;
+}
+
+.closeFilter{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pgMain{
   height: 100vh;
   width: 100%;
   display: flex;
   padding: 0px 80px;
   padding-top: 80px;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 0px 80px;
 }
 
 .left  {
@@ -537,309 +1404,45 @@ border-radius: 10px;
 .searachBoxOnMobile{
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* for laptop  */
-@media (max-width : 1450px) {
-  .PgName {
-    font-size: 20px;
-  }
-  .pgLocation{
-    font-size: 11px;
-  }
-  .locationBtn{
-    font-size: 11px;
-  }
-  .linksContainer {
-    font-size: 11px;
-  }
-  .AboutPgDips{
-    font-size: 11px;
-  }
-  .roomType{
-    font-size: 15px;
-  }
-  .startsFrom{
-    font-size: 12px;
-  }
-  .price{
-    font-size: 16px;
-  }
-  .wallet{
-    font-size: 14.50px;
-  }
-  .aboutPgtTitle, .roomDtlsTitle, .foodMenuTitle, .amentiesTitle, .nearByTitle{
-    font-size: 22px;
-  }
-  .foodMenuDips , .foodMenuDipsTwo{
-    font-size: 10px;
-  }
-  .AmentiName{
-    font-size: 12px;
-  }
-  .AmentiImg{
-    height: 30px;
-    width: 30px;
-    object-fit: cover;
-  }
-  .Facelity {
-    width: 150px;
-  }
-  .allAmenties{
-    gap: 10px;
-  }
-  .nearbyDips{
-    font-size: 12px;
-  }
-  .bookignDtls{
-    height: calc(100vh - 108px);
-  }
-  .BookignDtlsTitlw{
-    font-size: 16px;
-  }
-  .single {
-    font-size: 11px;
-  }
-  .policyTitle{
-    font-size: 15px;
-  }
-  .lightAndItalic{
-    font-size: 13px;
-  }
-  .roomQuilty{
-    font-size: 13px;
-  }
-  .rent{
-    font-size: 10px;
-  }
-  .visit, .confirm {
-    font-size: 12px;
-  }
-  .formNum{
-    font-size: 14px;
-  }
-  .pgImageContainer{
-    height: 380px;
-  }
-  .Amenties{
-    height: 300px;
-  }
-  .roomDtlsDips{
-    font-size: 10px;
-  }
-  .headerTwo{
-    height: 70px;
-  }
-  .CityListBtn{
-    width: 184px;
-    font-size: 14px;
-  }
-  .searchbox{
-    width: 390px;
-  }
-  .signInBtn{
-    width: 98px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  .searchbox{
-    font-size: 14px;
-  }
+.singinOfHomeNav{
+  padding: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* phone  query  */
-@media (max-width : 600px) {
-  .pgMain{
-    flex-direction: column;
-    padding: 15px;
-  }
-  .left , .right {
-    height: 50%;
-    width: 100%;
-  }
-  .right{
-    display: none;
-  }
-  .PgName{
-    font-size: 22px;
-  }
- 
-  .locationBtn{
-    height: 26px;
-    width:115px;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-  }
-  .pgImageContainer {
-    height: 220px;
-  }
-  .Amenties {
-    height: auto;
-  }
-  .map {
-    margin-top: 30px;
-  }
-  .locationWrapper{
-   flex-wrap: wrap;
-  }
-  .pgMain{
-    position: relative;
-  }
-  .btnsForMobile{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    display: flex;
-
-  }
-  .Schedul , .selectRoom {
-    width: 50%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFF;
-    z-index: 999;
-  }
-  .selectRoom{
-    background-color: #00AEEF;
-    color: #FFF;
-  }
-  .roomRent{
-    display: flex;
-    gap: 10px;
-    
-  }
-  .singleSharing , .doubleSharing, .TripleSharing {
-    width: 180px;
-    height: 120px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100% , 0% 100%) ;
-  }
-
-  .Facelity{
-    width: 70px;
-    flex-direction: column;
-    gap: 2px;
-    margin: 20px 0px;
-    justify-content: center;
-    text-align: center;
-    
-  }
-  .AmentiName {
-    font-size: 12px;
-  }
-  .quickLinksFroLargeDevice{
-    display: none;
-  }
-  .quickLinksFroSmallDevice , .linksContainer{
-    font-size: 14px;
-    margin-bottom: 10px;
-    margin-top: 40px;
-    display: flex;
-  }
-  .whatsappIcon{
-    font-size: 30px;
-    margin-right: 10px;
-    color: #30ef00;
-  }
-  .pgLocation{
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  .roomRent{
-    overflow: scroll;
-  }
-  .roomRent::-webkit-scrollbar {
-    display: none;
-  }
-.location{
-  width: 150px;
+/* footer  */
+.footer{
+  height: 50vh;
+  background-color: #00afef98;
 }
-/* hedaer two css  */
-.headerTwo{
-  padding: 0 10px;
-}
-.forLargeScreen{
-  display: none;
-}
-.forMobileScreen{
+.semiFooter{
+  height: 40vh;
   display: flex;
-}
-.headerTwoLoginIcon {
-  display: inline;
-}
-.signInBtn{
-  display: none;
-}
-.searachBoxOnMobile{
-  width: 200px;
-  background-color: #f7f7f7d3;
-  height: 70%;
-  font-size: 14px;
-  display: flex;
+  background-color: #fff;
   align-items: center;
-  border-radius: 8px;
-  padding: 0px 10px ;
-  gap: 10px;
+}
+.semiFooter{
+  display: flex;
   justify-content: space-between;
 }
-.findPgIcon{
-  margin-right: 10px;
+ul {
+  list-style: none;
 }
-.searchIconONmonile{
-  background-color: #00AEEF;
-  padding: 7px;
-  border-radius: 5px;
-  color: #FFF;
+.linkTitle{
+  font-size: 20px;
+  font-weight: 500;
 }
-.signUpIonOnMobile{
-  color: #00AEEF;
-  font-size: 25px;
-  margin-right: 10px;
+.footerLinks{
+  font-size: 13px;
+  margin: 5px 0px;
+  cursor: pointer;
 }
-.signUpIonOnMobile{
-  display: inline;
-}
-}
+
+
+
+
+
+
+
+
+
 
 
 

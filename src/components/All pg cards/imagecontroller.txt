@@ -1,0 +1,4 @@
+{/* <div className="pgCardImgController">
+          <i onClick={pgCardPrevImg}  className="fa-solid fa-angle-left prev"></i>
+          <i onClick={pgCardNextImg} className="fa-solid fa-chevron-right next"></i>
+          </div> */}

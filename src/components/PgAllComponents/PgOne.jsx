@@ -6,6 +6,9 @@ import HeaderTwo from './HeaderTwo'
 
 
 const PgOne = (prop) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // imges controller 
   const [imageNum, setimageNum] = useState(6)
   const prevImage = ()=> {
