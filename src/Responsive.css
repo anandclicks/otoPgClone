@@ -134,7 +134,13 @@ width: 90%;
   padding-right: 0px;
   padding-left: 3%;
 }
-
+.footer {
+  background-color: #BBEAFB;
+}
+.footer::after {
+  display: none;
+  left: 0;
+}
 
 
 
@@ -711,6 +717,24 @@ padding: 10px;
 .signUpIonOnMobile{
   display: inline;
 }
+/* footer  */
+.footer {
+  flex-direction: column;
+  height: 180vh;
 }
+.footer::after {
+  display: flex;
+  min-height: 180vh;
+}
+.footerParts{
+  height: 22%;
+  width: 100%;
+  align-items: start;
+}
+.getAcALL{
+  width: 100%;
+}
+}
+
 
 

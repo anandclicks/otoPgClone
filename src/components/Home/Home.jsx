@@ -8,6 +8,8 @@ import Memory from './Memory'
 import Feedback from './Feedback'
 import SemiFooter from './SemiFooter'
 import { UserContext } from '../../Context provider/UserContext'
+import Footer from '../Footer/Footer'
+import GetCallForm from './GetCallForm'
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -69,6 +71,7 @@ const Home = () => {
     <div className='container MainHome'>
       <Navbar/>
       {/* left and rihgt side  */}
+      <GetCallForm/>
       <div className="home">
         {/* left side  */}
         <div className="homeleft">
@@ -95,6 +98,7 @@ const Home = () => {
       <Memory/>
       <Feedback/>
       <SemiFooter/>
+      <Footer/>
     </div>
     </>
   )

@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../../Context provider/UserContext'
+import GetCallForm from './GetCallForm'
 
 const Navbar = () => {
   const [menuStatus, setmenuStatus] = useState(false)
   const navController = ()=> {
     setmenuStatus(prev => !prev)
   }
+  // get a call function getting 
+  const {handleGetAcALLState} = useContext(UserContext)
 
   return (
     <>
@@ -19,7 +23,7 @@ const Navbar = () => {
  </div>
  <div className="btns">
    <a href="/noida" className="bgPrimery">See All PG's <i className="text-white ri-arrow-right-up-line"></i></a>
-   <button className="addProperty">List property <i className="text-white ri-add-circle-fill"></i></button>
+   <button onClick={handleGetAcALLState} className="addProperty">Get A call <i className="text-white ri-add-circle-fill"></i></button>
  </div>
 </div>
     <div className='Navbar'>
@@ -35,7 +39,7 @@ const Navbar = () => {
         <Link>Your property</Link>
         <a href='tel:+917415051778'><i className="ri-phone-fill"></i> +91 7415051778</a>
         <a href='mailto: info@otostays.com'><i className="ri-mail-line"></i> info@otostays.com</a>
-        <li className=' singinOfHomeNav'>Get a Call</li>
+        <li onClick={handleGetAcALLState} className=' singinOfHomeNav'>Get a Call</li>
       </div>
     </div>
     </>
