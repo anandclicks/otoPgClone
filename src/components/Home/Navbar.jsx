@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [menuStatus, setmenuStatus] = useState(false)
@@ -30,10 +31,10 @@ const Navbar = () => {
       </div>
       {/* links  */}
       <div className="navLinks">
-        <li>Explore pg</li>
-        <li>Your property</li>
-        <li><i className="ri-phone-fill"></i> +91 7415051778</li>
-        <li><i className="ri-mail-line"></i> info@otostays.com</li>
+        <Link to={'/noida'}>Explore pg</Link>
+        <Link>Your property</Link>
+        <a href='tel:+917415051778'><i className="ri-phone-fill"></i> +91 7415051778</a>
+        <a href='mailto: info@otostays.com'><i className="ri-mail-line"></i> info@otostays.com</a>
         <li className=' singinOfHomeNav'>Get a Call</li>
       </div>
     </div>

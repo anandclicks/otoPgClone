@@ -1,8 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SemiFooter = () => {
   return (
          <div className="semiFooter">
+        <div className="linksWrapper">
+            <Link to={'/noida'} className='linkTitle'>PG In Noida</Link>
+          <ul className='list-unstyled flex flex-col gap-1 pt-2'>
+            <p><Link to={'/noida'} className='footerLinks '>PG In Noida</Link></p>
+            <p><Link to={'/noida'} className='footerLinks '>Hotels In Noida</Link></p>
+            <p><Link to={'/noida'} className='footerLinks '>Room for Rent in Noida</Link></p>
+            <p><Link to={'/noida'} className='footerLinks '>Coliving In Noida</Link></p>
+          </ul>
+        </div>
         <div className="linksWrapper">
             <p className='linkTitle'>PG In Delhi</p>
           <ul className='list-unstyled flex flex-col gap-2 pt-2 '>
@@ -10,15 +20,6 @@ const SemiFooter = () => {
             <li className='footerLinks '>Hotels In Delhi</li>
             <li className='footerLinks '>Room for Rent in Delhi</li>
             <li className='footerLinks '>Coliving In Delhi</li>
-          </ul>
-        </div>
-        <div className="linksWrapper">
-            <p className='linkTitle'>PG In Noida</p>
-          <ul className='list-unstyled flex flex-col gap-1 pt-2'>
-            <li className='footerLinks '>PG In Noida</li>
-            <li className='footerLinks '>Hotels In Noida</li>
-            <li className='footerLinks '>Room for Rent in Noida</li>
-            <li className='footerLinks '>Coliving In Noida</li>
           </ul>
         </div>
         <div className="linksWrapper">
