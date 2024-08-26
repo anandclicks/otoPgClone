@@ -525,8 +525,9 @@ padding: 10px;
   left: 0;
   transition: 0.3s;
 }
-
-
+.polygonForMemory {
+ overflow: hidden;
+}
 
 
 
