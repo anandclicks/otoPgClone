@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import SingleSharingRentDtls from './SingleSharingRentDtls'
 import DoubleSharingDtls from './DoubleSharingDtls'
 import TripleSharing from './TripleSharing'
 import HeaderTwo from './HeaderTwo'
+import { UserContext } from '../../Context provider/UserContext'
+import GetCallForm from '../Home/GetCallForm'
 
 
 const PgOne = (prop) => {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,6 +37,8 @@ const PgOne = (prop) => {
 
   // form postion manage 
   const [isFixed, setisFixed] = useState(true)
+  // get a call fuction handling 
+  const {handleGetAcALLState} = useContext(UserContext)
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -53,13 +58,14 @@ const PgOne = (prop) => {
   }, []);
   return (
     <>
+    <GetCallForm/>
     <HeaderTwo/>
     <div className='pgMain'>
       <div className="btnsForMobile">
         <div className="Schedul">
         <i className="fa-brands fa-square-whatsapp whatsappIcon"></i> Schedule Visit
         </div>
-        <div className="selectRoom">
+        <div onClick={handleGetAcALLState} className="selectRoom">
           Select Room
         </div>
       </div>
@@ -201,14 +207,22 @@ const PgOne = (prop) => {
         <iframe src={`${prop.liveLocationUrl}`}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         {/* nearby location  */}
-        <div className="nearBy">
           <h2 className='nearByTitle'>Nearby <span>Location</span></h2>
           <p className='nearbyDips'>Oto Marydale is strategically placed nearby key office spaces and access roads</p>
+        <div className="nearBy">
         <div className="locationWrapper">
-          <div className="location"></div>
-          <div className="location"></div>
-          <div className="location"></div>
-          <div className="location"></div>
+          <div className="location">
+            <p className='nearbyLandmark'>{prop.nearByLandmarkOne}</p>
+            <h5 className='distnceFromLandmark'>{prop.distanceFromPgOne}</h5>
+          </div>
+          <div className="location">
+          <p className='nearbyLandmark'>{prop.nearByLandmarkTwo}</p>
+          <h5 className='distnceFromLandmark'>{prop.distanceFromPgTwo}</h5>
+          </div>
+          <div className="location">
+          <p className='nearbyLandmark'>{prop.nearByLandmarkThree}</p>
+          <h5 className='distnceFromLandmark'>{prop.distanceFromPgThree}</h5>
+          </div>
           </div>
         </div>
       </div>
@@ -242,7 +256,7 @@ const PgOne = (prop) => {
          <div className="lower">
           <div className="scheduleBtns">
             <div className="visit">SCHEDULE A VISIT</div>
-            <div className="confirm">CONFIRM DETAILS</div>
+            <div onClick={handleGetAcALLState} className="confirm">CONFIRM DETAILS</div>
           </div>
           <h5 className='formNum'>To book for a period less than 30 days, Contact +910000000</h5>
          </div>

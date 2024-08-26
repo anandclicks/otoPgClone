@@ -37,6 +37,12 @@ function App() {
                           doubleSharingPrice={AllPgDetails[0].doubleSharingPrice}
                           tripleSharingPrice={AllPgDetails[0].tripleSharingPrice}
                           liveLocationUrl={AllPgDetails[0].liveLocationUrl}
+                          nearByLandmarkOne={AllPgDetails[0].nearByLandmarkOne}
+                          nearByLandmarkTwo={AllPgDetails[0].nearByLandmarkTwo}
+                          nearByLandmarkThree={AllPgDetails[0].nearByLandmarkThree}
+                          distanceFromPgOne={AllPgDetails[0].distanceFromPgOne}
+                          distanceFromPgTwo={AllPgDetails[0].distanceFromPgTwo}
+                          distanceFromPgThree={AllPgDetails[0].distanceFromPgThree}
                           />
                           </>} />
         <Route path='/noida/royal-town-sector45'
@@ -50,6 +56,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[1].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[1].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[1].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[1].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[1].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[1].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[1].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[1].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[1].distanceFromPgThree}
                         />
                         </>} />
         <Route path='/noida/scout-house-sector45'
@@ -63,6 +75,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[2].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[2].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[2].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[2].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[2].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[2].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[2].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[2].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[2].distanceFromPgThree}
                         />
                         </>} />
         <Route path='/noida/oto-bloom-sector45'
@@ -76,6 +94,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[3].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[3].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[3].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[4].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[4].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[4].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[4].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[4].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[4].distanceFromPgThree}
                         />
                         </>} />
        <Route path='/noida/oto-omega-sector51'
@@ -89,6 +113,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[4].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[4].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[4].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[4].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[4].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[4].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[4].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[4].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[4].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-galaxy-sector51'
@@ -102,6 +132,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[5].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[5].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[5].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[5].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[5].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[5].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[5].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[5].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[5].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-coastal-sector62'
@@ -115,6 +151,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[6].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[6].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[6].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[6].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[6].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[6].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[6].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[6].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[6].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-Township-sector73'
@@ -128,6 +170,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[7].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[7].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[7].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[7].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[7].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[7].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[7].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[7].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[7].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-crop-town-sector73'
@@ -141,6 +189,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[8].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[8].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[8].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[8].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[8].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[8].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[8].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[8].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[8].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-white-house-sector104'
@@ -154,6 +208,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[9].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[9].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[9].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[9].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[9].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[9].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[9].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[9].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[9].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-royal-win-sector104'
@@ -167,6 +227,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[10].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[10].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[10].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[10].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[10].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[10].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[10].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[10].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[10].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-royal-win2-sector104'
@@ -180,6 +246,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[11].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[11].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[11].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[11].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[11].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[11].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[11].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[11].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[11].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-expo-primium-sector128'
@@ -193,6 +265,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[12].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[12].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[12].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[12].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[12].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[12].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[12].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[12].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[12].distanceFromPgThree}
                         />
                         </>} />
       <Route path='/noida/oto-expressway-sector128'
@@ -206,6 +284,12 @@ function App() {
                         doubleSharingPrice={AllPgDetails[13].doubleSharingPrice}
                         tripleSharingPrice={AllPgDetails[13].tripleSharingPrice}
                         liveLocationUrl={AllPgDetails[13].liveLocationUrl}
+                        nearByLandmarkOne={AllPgDetails[13].nearByLandmarkOne}
+                        nearByLandmarkTwo={AllPgDetails[13].nearByLandmarkTwo}
+                        nearByLandmarkThree={AllPgDetails[13].nearByLandmarkThree}
+                        distanceFromPgOne={AllPgDetails[13].distanceFromPgOne}
+                        distanceFromPgTwo={AllPgDetails[13].distanceFromPgTwo}
+                        distanceFromPgThree={AllPgDetails[13].distanceFromPgThree}
                         />
                         </>} />
       </Routes>

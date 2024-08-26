@@ -31,7 +31,7 @@ const HeaderTwo = () => {
       </div>
        {/* this is for fc  */}
      <div className="signInBtn"> 
-      Sign in
+      Get a Call
      </div>
      <div className="signUpIonOnMobile">
      <i className="fa-solid fa-right-to-bracket"></i>

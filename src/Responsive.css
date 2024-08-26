@@ -147,7 +147,7 @@ width: 90%;
   background-color: #BBEAFB;
 }
 .footer::after {
-  display: none;
+
   left: 0;
 }
 .footerLinkTitleAndLink{
@@ -216,6 +216,12 @@ width: 90%;
   .aboutPgtTitle, .roomDtlsTitle, .foodMenuTitle, .amentiesTitle, .nearByTitle{
     font-size: 22px;
   }
+  .nearBy{
+    overflow: scroll;
+  }
+  .locationWrapper{
+    width: 130%;
+  }
   .foodMenuDips , .foodMenuDipsTwo{
     font-size: 10px;
   }
@@ -235,6 +241,15 @@ width: 90%;
   }
   .nearbyDips{
     font-size: 12px;
+  }
+  .nearbyLandmark {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .distnceFromLandmark{
+    font-weight: 500;
+    font-size: 15px;
   }
   .bookignDtls{
     height: calc(100vh - 108px);
@@ -281,6 +296,7 @@ width: 90%;
   }
   .searchbox{
     width: 390px;
+    justify-content: space-between;
   }
   .signInBtn{
     width: 98px;
@@ -290,6 +306,9 @@ width: 90%;
   }
   .searchbox{
     font-size: 14px;
+  }
+  .searchIconAndBtn{
+    justify-content: end;
   }
 }
 
@@ -614,7 +633,7 @@ padding: 10px;
     margin-top: 30px;
   }
   .locationWrapper{
-   flex-wrap: wrap;
+ 
   }
   .pgMain{
     position: relative;
@@ -690,6 +709,10 @@ padding: 10px;
   }
 .location{
   width: 150px;
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* hedaer two css  */
 .headerTwo{
@@ -752,6 +775,9 @@ padding: 10px;
 }
 .getAcALL{
   width: 100%;
+}
+.getAcALL form input {
+  margin-bottom: 10px;
 }
 }
 

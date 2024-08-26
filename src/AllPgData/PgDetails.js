@@ -14,7 +14,13 @@ export const AllPgDetails = [
       DoubleSharing : true,
       TripleSharing : false,
       withFood : true,
-      city : 'Noida'
+      city : 'Noida',
+      nearByLandmarkOne : 'Botanical garden metro stations ',
+      nearByLandmarkTwo : 'DLF mall of India ',
+      nearByLandmarkThree : 'parks and workout space',
+      distanceFromPgOne : '5 min away',
+      distanceFromPgTwo : '15 Min away',
+      distanceFromPgThree : '15 min',
 },
 {
     id : 2, 
@@ -31,7 +37,13 @@ export const AllPgDetails = [
     DoubleSharing : true,
     TripleSharing : false,
     withFood : true,
-    city : 'Noida'
+    city : 'Noida',
+    nearByLandmarkOne : 'Botanical garden metro stations ',
+    nearByLandmarkTwo : 'DLF mall of India ',
+    nearByLandmarkThree : 'parks and workout space',
+    distanceFromPgOne : '5 min away',
+    distanceFromPgTwo : '15 Min away',
+    distanceFromPgThree : '15 min',
 },
 {
   id : 3, 
@@ -48,7 +60,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : true,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 4,
@@ -65,7 +83,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 5, 
@@ -82,7 +106,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 6, 
@@ -99,7 +129,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 7, 
@@ -116,7 +152,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : true,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 8, 
@@ -133,7 +175,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 9, 
@@ -150,7 +198,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 10, 
@@ -167,7 +221,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : true,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 11, 
@@ -184,7 +244,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : false,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 12, 
@@ -201,7 +267,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : true,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 13,
@@ -218,7 +290,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : true,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 {
   id : 14, 
@@ -235,7 +313,13 @@ export const AllPgDetails = [
   DoubleSharing : true,
   TripleSharing : true,
   withFood : false,
-  city : 'Noida'
+  city : 'Noida',
+  nearByLandmarkOne : 'Botanical garden metro stations ',
+  nearByLandmarkTwo : 'DLF mall of India ',
+  nearByLandmarkThree : 'parks and workout space',
+  distanceFromPgOne : '5 min away',
+  distanceFromPgTwo : '15 Min away',
+  distanceFromPgThree : '15 min',
 },
 
 ]

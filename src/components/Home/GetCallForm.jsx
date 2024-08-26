@@ -5,7 +5,7 @@ const GetCallForm = () => {
   const {getACallState, handleGetAcALLState} = useContext(UserContext)
   return (
     <div className={`getAcALL ${getACallState ? 'getAcALLVisible' : 'getAcALLInVisible'}`}>
-      <h3>Get A <span>Call</span></h3>
+      <h3 className='getAcallTitle'>Get A <span>Call</span></h3>
       <i onClick={handleGetAcALLState} class="ri-close-large-line getCallFormCloseIcon"></i>
       <form action="">
         <div>
@@ -29,8 +29,8 @@ const GetCallForm = () => {
             <option value="">Triple Sharing</option>
           </select>
         </div>
-        <input className='getcallsubmitbtn' type="Submit" value={'Submit'} />
       </form>
+        <div className='getcallsubmitbtn'>Submit</div>
     </div>
   )
 }
