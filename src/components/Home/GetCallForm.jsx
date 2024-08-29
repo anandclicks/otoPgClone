@@ -24,18 +24,34 @@ const GetCallForm = () => {
 
   // API calling
   const getAcallBackApi = async (e) => {
+    document.querySelector(".loadingDiv").style.display = "flex"
+    setTimeout(e=> {
+document.querySelector(".loadingDiv").style.display = "none"
+    },3000)
     e.preventDefault();
     try {
-      // const response = await axios.post('YOUR_API_ENDPOINT', formData);
-      // console.log('API Response:', response.data);
-      console.log(formData)
+      const response = await axios.post('http://localhost:3001/getAcall', formData);
+      console.log('API Response:', response.data);
+      setFormData({
+        name: '',
+        mobileNumber: '',
+        email: '',
+        roomType: '',
+      })
+      // Handle success (e.g., close the form, show a success message, etc.)
     } catch (error) {
       console.error('API Error:', error);
+      
       // Handle error (e.g., show an error message)
     }
   };
 
   return (
+    <>
+    {/* loading  */}
+    <div className="loadingDiv">
+      <img src="\reqest send\succesfull.gif" alt="" />
+    </div>
     <div className={`getAcALL ${getACallState ? 'getAcALLVisible' : 'getAcALLInVisible'}`}>
       <h3 className='getAcallTitle'>Get A <span>Call</span></h3>
       <i onClick={handleGetAcALLState} className="ri-close-large-line getCallFormCloseIcon"></i>
@@ -90,6 +106,7 @@ const GetCallForm = () => {
         <button type="submit" className='getcallsubmitbtn'>Submit</button>
       </form>
     </div>
+    </>
   );
 };
 

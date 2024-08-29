@@ -1717,3 +1717,25 @@ position: absolute;
 .inputTitle{
   font-size: 14px;
 }
+.loadingDiv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000a9;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center ;
+}
+.loadingDiv img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+
+
+
