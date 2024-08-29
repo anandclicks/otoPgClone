@@ -258,7 +258,7 @@ const PgOne = (prop) => {
             <div className="visit">SCHEDULE A VISIT</div>
             <div onClick={handleGetAcALLState} className="confirm">CONFIRM DETAILS</div>
           </div>
-          <h5 className='formNum'>To book for a period less than 30 days, Contact +910000000</h5>
+          <h5 className='formNum'>To book for a period less than 30 days, Contact +91 7415051778</h5>
          </div>
         </div>
       </div>

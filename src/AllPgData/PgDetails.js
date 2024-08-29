@@ -258,7 +258,7 @@ export const AllPgDetails = [
   pgTitle : 'OTO Royal win 2',
   pgLocation : 'OTO Royal win2 gali no 10 Hazipur sector 104 Noida',
   mapUrl : 'https://www.google.com/maps?q=28.5396605,77.3701956&z=17&hl=en',
-  imageUrl : 'Not found',
+  imageUrl : '/Allcitiesindividualpgs/OtoroyalwinTwo/',
   singleSharingPrice : '18000',
   doubleSharingPrice : '10000',
   tripleSharingPrice : '8000',
@@ -323,3 +323,31 @@ export const AllPgDetails = [
 },
 
 ]
+
+
+
+// const AllPgDetails = Array.from({ length: 1000 }, (_, index) => ({
+//   id: index + 1,
+//   pageUrl: `/noida/oto-location${index + 1}`,
+//   pgTitle: `OTO PG ${index + 1}`,
+//   pgLocation: `OTO PG sector ${Math.floor(100 + (index % 100))} Village - Area ${index + 1} Nearby - landmark ${index + 1}`,
+//   mapUrl: `https://www.google.com/maps?q=28.${5000000 + index},77.${3600000 + index}&z=17&hl=en`,
+//   imageUrl: `/Allcitiesindividualpgs/otopgsec${100 + (index % 100)}/`,
+//   singleSharingPrice: `${10000 + (index % 5000)}`,
+//   doubleSharingPrice: `${6000 + (index % 2000)}`,
+//   tripleSharingPrice: `${5000 + (index % 1000)}`,
+//   liveLocationUrl: `https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3505.${714000 + index}!2d77.${364000 + index}!3d28.${518000 + index}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMxJzA1LjciTiA3N8KwMjInMDIuMSJF!5e0!3m2!1sen!2sro!4v1724577854473!5m2!1sen!2sro`,
+//   privatRoom: Math.random() > 0.5,
+//   DoubleSharing: Math.random() > 0.5,
+//   TripleSharing: Math.random() > 0.5,
+//   withFood: Math.random() > 0.5,
+//   city: 'Noida',
+//   nearByLandmarkOne: `Landmark ${index % 50} Metro Station`,
+//   nearByLandmarkTwo: `DLF Mall of India ${index % 20}`,
+//   nearByLandmarkThree: `Park and Workout Space ${index % 10}`,
+//   distanceFromPgOne: `${5 + (index % 10)} min away`,
+//   distanceFromPgTwo: `${15 + (index % 10)} min away`,
+//   distanceFromPgThree: `${20 + (index % 10)} min`,
+// }));
+
+// export default AllPgDetails

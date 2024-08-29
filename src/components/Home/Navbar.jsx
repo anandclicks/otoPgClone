@@ -9,7 +9,7 @@ const Navbar = () => {
     setmenuStatus(prev => !prev)
   }
   // get a call function getting 
-  const {handleGetAcALLState} = useContext(UserContext)
+  const {handleGetAcALLState,handleSpacialOfferPopup} = useContext(UserContext)
 
   return (
     <>
@@ -22,7 +22,7 @@ const Navbar = () => {
      <a className="text-decoration-none text-white" href="https://www.linkedin.com/company/otostays/"><i className="fa-brands fa-linkedin"></i></a>
  </div>
  <div className="btns">
-   <a href="/noida" className="bgPrimery">See All PG's <i className="text-white ri-arrow-right-up-line"></i></a>
+   <Link to={"/noida"} className="bgPrimery">See All PG's <i className="text-white ri-arrow-right-up-line"></i></Link>
    <button onClick={handleGetAcALLState} className="addProperty">Get A call <i className="text-white ri-add-circle-fill"></i></button>
  </div>
 </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* links  */}
       <div className="navLinks">
         <Link to={'/noida'}>Explore pg</Link>
-        <Link>Your property</Link>
+        <Link onClick={handleSpacialOfferPopup} className='spacialOffer'>Spacial Offer</Link>
         <a href='tel:+917415051778'><i className="ri-phone-fill"></i> +91 7415051778</a>
         <a href='mailto: info@otostays.com'><i className="ri-mail-line"></i> info@otostays.com</a>
         <li onClick={handleGetAcALLState} className=' singinOfHomeNav'>Get a Call</li>

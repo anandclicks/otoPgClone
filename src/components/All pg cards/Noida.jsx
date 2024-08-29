@@ -1,25 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react';
 
-import Navbar from '../Home/Navbar'
-import HeaderTwo from '../PgAllComponents/HeaderTwo'
-import { Link } from 'react-router-dom'
-import Card from './Card'
-import { UserContext } from '../../Context provider/UserContext'
+import Navbar from '../Home/Navbar';
+import HeaderTwo from '../PgAllComponents/HeaderTwo';
+import { Link } from 'react-router-dom';
+import Card from './Card';
+import { UserContext } from '../../Context provider/UserContext';
+import GetCallForm from '../Home/GetCallForm';
 
 const Noida = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [rangeValue, setragneValue] = useState(1000)
+
+  const [rangeValue, setRangeValue] = useState(4999);
   const [selectedSort, setSelectedSort] = useState(null);
-  const [filterOptions, setfilterOptions] = useState(false)
-  const handleFilterBtn = ()=> {
-    setfilterOptions(prev => !prev)
+  const [filterOptions, setFilterOptions] = useState(false);
+  const [selectedSharing, setSelectedSharing] = useState(null);
+
+  const handleFilterBtn = () => {
+    setFilterOptions((prev) => !prev);
+  };
+
+  const handleRangeInput = (event) => {
+    const value = event.target.value;
+    setRangeValue(value);
+    handleRange(value)
+    // Additional logic to filter data based on the rangeValue can go here
   }
-  const handleRnageInput = (evt)=> {
-    setragneValue(evt.target.value)
-    console.log(event.target.value)
-  }
+  
+
   const handleCheckboxChange = (value, handler) => {
     if (selectedSort === value) {
       setSelectedSort(null);
@@ -28,79 +37,127 @@ const Noida = () => {
       handler(); // Call the respective sorting function
     }
   };
-  // gettign low to high and high to low function 
-  const {hightToLOwDataHandle, LOwtoHighDataHandle, dataForMap} = useContext(UserContext)
+
+  const handleSharingChange = (value) => {
+    if (selectedSharing === value) {
+      setSelectedSharing(null);
+    } else {
+      setSelectedSharing(value);
+    }
+  };
+
+  const { hightToLOwDataHandle, LOwtoHighDataHandle, dataForMap, SingleSharingHandle,doubleSharingHandle,tripleSharingHandle, handleRange } = useContext(UserContext);
+
   return (
     <>
-      <HeaderTwo/>
-    <div className='NoidaAllPgMain container'>
-      {/* filter bavbar tiele  */}
-      <div className={`filterSide ${filterOptions ? 'filterSideVisible' : 'filterSideinVisible'}`}>
-        <div className="filterWrapper">
-          <div className="filterNavbar">
-            <h2 className='filterNavTitle'>Filters</h2>
-            <i onClick={handleFilterBtn} class="ri-close-large-line closeFilter"></i>
-            {/* <div className="ClearfilterBtn">Clear Filters</div> */}
+      <HeaderTwo />
+      <GetCallForm/>
+      <div className='NoidaAllPgMain container'>
+        {/* filter navbar title */}
+        <div className={`filterSide ${filterOptions ? 'filterSideVisible' : 'filterSideinVisible'}`}>
+          <div className="filterWrapper">
+            <div className="filterNavbar">
+              <h2 className='filterNavTitle'>Filters</h2>
+              <i onClick={handleFilterBtn} className="ri-close-large-line closeFilter"></i>
+            </div>
+            {/* sort by filter */}
+            <div className="sortBy filterBox">
+              <h3 className='filterTypeTitle'>Sort By</h3>
+              <div className="filterinputBoxe">
+                <div className="inputWrapper">
+                  <input 
+                    onClick={hightToLOwDataHandle} 
+                    onChange={() => handleCheckboxChange('lowToHigh', hightToLOwDataHandle)} 
+                    checked={selectedSort === 'lowToHigh'} 
+                    type="checkbox" 
+                  /> 
+                  <p>Price : Low to High</p>
+                </div>
+                <div className="inputWrapper">
+                  <input 
+                    onClick={LOwtoHighDataHandle} 
+                    onChange={() => handleCheckboxChange('highToLow', LOwtoHighDataHandle)} 
+                    checked={selectedSort === 'highToLow'} 
+                    type="checkbox" 
+                  /> 
+                  <p>Price : High to Low</p>
+                </div>
+              </div>
+            </div>
+            {/* sharing type filter */}
+            <div className="sharingType filterBox">
+              <h3 className='filterTypeTitle'>Filter By</h3>
+              <div className="filterinputBoxe">
+                <div className="inputWrapper">
+                  <input 
+                    type="checkbox" 
+                    onChange={() => handleSharingChange('single')} 
+                    onClick={SingleSharingHandle}
+                    checked={selectedSharing === 'single'} 
+                  /> 
+                  <p>Single Sharing</p>
+                </div>
+                <div className="inputWrapper">
+                  <input 
+                    type="checkbox" 
+                    onChange={() => handleSharingChange('double')} 
+                    onClick={doubleSharingHandle}
+                    checked={selectedSharing === 'double'} 
+                  /> 
+                  <p>Double Sharing</p>
+                </div>
+                <div className="inputWrapper">
+                  <input 
+                    type="checkbox" 
+                    onChange={() => handleSharingChange('triple')} 
+                    onClick={tripleSharingHandle}
+                    checked={selectedSharing === 'triple'} 
+                  /> 
+                  <p>Triple Sharing</p>
+                </div>
+              </div>
+            </div>
+            {/* price range */}
+            <div className="priceRange">
+              <input 
+                onChange={handleRangeInput} 
+                className='range' 
+                step={1000}
+                min={4999} 
+                max={9999} 
+                type="range" 
+              />
+              <div className="rangeValue">
+                <div className="firstValue">Rs. ₹{rangeValue}</div>
+                <div className="lasValue">Rs. ₹9900</div>
+              </div>
+            </div>
           </div>
-           {/* sort by filter  */}
-      <div className="sortBy filterBox">
-        <h3 className='filterTypeTitle'>Sort By</h3>
-        <div className="filterinputBoxe">
-         <div className="inputWrapper">
-         <input onClick={hightToLOwDataHandle}  onChange={() => handleCheckboxChange('lowToHigh', hightToLOwDataHandle)}   checked={selectedSort === 'lowToHigh'} type="checkbox" /> <p>Price : Low to Hign</p>
-         </div>
-         <div className="inputWrapper">
-         <input onClick={LOwtoHighDataHandle}    onChange={() => handleCheckboxChange('highToLow', LOwtoHighDataHandle)} checked={selectedSort === 'highToLow'}  type="checkbox" /> <p>Price : High to Low</p>
-         </div>
+        </div>
+        {/* filter icon for mobile */}
+        <div onClick={handleFilterBtn} className='filterIconBox'>
+          <i className="ri-equalizer-line"></i> Filter/Sort
+        </div>
+        <div className="pgCardSide">
+          <div className="pgsWrapper">
+            {/* heading row */}
+            <div className="headingRow">
+              <div className="quickLinks">
+                <Link to={'/'}><span>Home<i className="ri-arrow-drop-right-line"></i></span></Link>Noida
+              </div>
+              <h3 className="noidaAllPgHeading">
+                Showing {dataForMap.length} properties in <span>Noida</span>
+              </h3>
+            </div>
+            {/* all cards */}
+            <div className="allPgCards">
+              <Card />
+            </div>
+          </div>
         </div>
       </div>
-      {/* sharing type filter  */}
-      <div className="sharingType filterBox">
-        <h3 className='filterTypeTitle'>Filter By</h3>
-        <div className="filterinputBoxe">
-         <div className="inputWrapper">
-         <input type="checkbox" /> <p>Single Sharing</p>
-         </div>
-         <div className="inputWrapper">
-         <input type="checkbox" /> <p>Double Shairng</p>
-         </div>
-         <div className="inputWrapper">
-         <input type="checkbox" /> <p>Triple Shairng</p>
-         </div>
-        </div>
-      </div>
-      {/* price range  */}
-      <div className="priceRange ">
-      <input onChange={handleRnageInput} className='range' min={1000} max={20000} type="range" />
-        <div className="rangeValue">
-          <div className="firstValue">Rs. ₹{rangeValue}</div>
-          <div className="lasValue">Rs. ₹20000</div>
-        </div>
-       
-      </div>
-        </div>
-      </div>
-      {/* filter icon for mibile  */}
-      <div onClick={handleFilterBtn} className='filterIconBox'>
-      <i class="ri-equalizer-line "></i>  Filter/Sort </div>
-      <div className="pgCardSide">
-      <div className="pgsWrapper">
-        {/* heading row  */}
-      <div className="headingRow">
-        <div className="quickLinks">
-          <Link to={'/'}><span>Home<i class="ri-arrow-drop-right-line"></i></span></Link>Noida
-        </div>
-      <h3 className="noidaAllPgHeading">Showing {dataForMap.length} properties in <span>Noida</span></h3>
-      </div>
-      {/* all cards  */}
-      <div className="allPgCards">
-      <Card/>
-      </div>
-      </div>
-      </div>
-    </div>
     </>
-  )
+  );
 }
 
-export default Noida
+export default Noida;

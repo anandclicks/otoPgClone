@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../../Context provider/UserContext'
+
+
 
 const HeaderTwo = () => {
+  const {handleGetAcALLState} = useContext(UserContext)
   return (
     <div className='headerTwo'>
       <Link to={'/'} className="headerTwoLogo">
@@ -30,7 +34,7 @@ const HeaderTwo = () => {
       <i className="fa-solid fa-magnifying-glass searchIconONmonile"></i>
       </div>
        {/* this is for fc  */}
-     <div className="signInBtn"> 
+     <div onClick={handleGetAcALLState} className="signInBtn"> 
       Get a Call
      </div>
      <div className="signUpIonOnMobile">

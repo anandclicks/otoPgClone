@@ -9,10 +9,10 @@ const Footer = () => {
           <img src="/logo/OtoStaysDarkLogo.png" alt="" />
           <p className='footerDips'>You know, when we go out of our home to the city in search of studies and jobs, we get everything very easily but we do not get a happy home.Follow us at</p>
           <div className="footericons">
-          <i class="ri-instagram-line"></i>
-          <i class="ri-facebook-line"></i>
-          <i class="ri-twitter-x-line"></i>
-          <i class="ri-linkedin-line"></i>
+          <i className="ri-instagram-line"></i>
+          <i className="ri-facebook-line"></i>
+          <i className="ri-twitter-x-line"></i>
+          <i className="ri-linkedin-line"></i>
           </div>
         </div>
       </div>
@@ -20,11 +20,11 @@ const Footer = () => {
         <div className="footerLinkTitleAndLink">
           <h3>Useful links</h3>
           <ul>
-            <Link><i class="ri-arrow-right-line"></i> Home</Link>
-            <Link><i class="ri-arrow-right-line"></i> About Us</Link>
-            <Link><i class="ri-arrow-right-line"></i> Blog</Link>
-            <Link><i class="ri-arrow-right-line"></i> All PG for you</Link>
-            <Link><i class="ri-arrow-right-line"></i> Book pg</Link>
+            <Link><i className="ri-arrow-right-line"></i> Home</Link>
+            <Link><i className="ri-arrow-right-line"></i> About Us</Link>
+            <Link><i className="ri-arrow-right-line"></i> Blog</Link>
+            <Link><i className="ri-arrow-right-line"></i> All PG for you</Link>
+            <Link><i className="ri-arrow-right-line"></i> Book pg</Link>
           </ul>
         </div>
       </div>
@@ -32,11 +32,11 @@ const Footer = () => {
       <div className="footerLinkTitleAndLink">
           <h3>Explore PG</h3>
           <ul>
-            <Link><i class="ri-arrow-right-line"></i> PG in Delhi</Link>
-            <Link><i class="ri-arrow-right-line"></i> PG in Noida</Link>
-            <Link><i class="ri-arrow-right-line"></i> PG in Gurugram</Link>
-            <Link><i class="ri-arrow-right-line"></i> PG in Greater Noida</Link>
-            <Link><i class="ri-arrow-right-line"></i> PG in Ghaziabad</Link>
+            <Link><i className="ri-arrow-right-line"></i> PG in Delhi</Link>
+            <Link><i className="ri-arrow-right-line"></i> PG in Noida</Link>
+            <Link><i className="ri-arrow-right-line"></i> PG in Gurugram</Link>
+            <Link><i className="ri-arrow-right-line"></i> PG in Greater Noida</Link>
+            <Link><i className="ri-arrow-right-line"></i> PG in Ghaziabad</Link>
           </ul>
         </div>
       </div>
@@ -44,21 +44,21 @@ const Footer = () => {
       <div className="footerLinkTitleAndLink">
           <h3>Contact Information</h3>
           <div className='footerLastBox'>
-          <i class="ri-focus-3-line"></i>
+          <i className="ri-focus-3-line"></i>
           <div className='footerLastScTitle'>
             <h4>Address</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
           </div>
           <div className='footerLastBox'>
-          <i class="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-phone"></i>
           <div className='footerLastScTitle'>
             <h4>Phone Number</h4>
             <p>+91 7415051778</p>
           </div>
           </div>
           <div className='footerLastBox'>
-          <i class="ri-mail-line"></i>
+          <i className="ri-mail-line"></i>
           <div className='footerLastScTitle'>
             <h4>Email Address</h4>
             <p>info@otostays.com</p>

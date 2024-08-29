@@ -8,6 +8,7 @@ import { UserContext, UserContextProvider } from './Context provider/UserContext
 import { Route, Routes } from 'react-router-dom'
 import { AllPgDetails } from './AllPgData/PgDetails'
 import Noida from './components/All pg cards/Noida'
+// import AllPgDetails from './AllPgData/PgDetails'
 
 
 function App() {

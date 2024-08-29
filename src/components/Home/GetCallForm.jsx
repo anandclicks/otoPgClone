@@ -6,7 +6,7 @@ const GetCallForm = () => {
   return (
     <div className={`getAcALL ${getACallState ? 'getAcALLVisible' : 'getAcALLInVisible'}`}>
       <h3 className='getAcallTitle'>Get A <span>Call</span></h3>
-      <i onClick={handleGetAcALLState} class="ri-close-large-line getCallFormCloseIcon"></i>
+      <i onClick={handleGetAcALLState} className="ri-close-large-line getCallFormCloseIcon"></i>
       <form action="">
         <div>
           <p>Your name</p>

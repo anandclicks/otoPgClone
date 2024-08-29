@@ -162,7 +162,9 @@ width: 90%;
 .footerDips{
   font-size: 14px;
 }
-
+.offterBox{
+  width: 80%;
+}
 
 
 
@@ -710,7 +712,7 @@ padding: 10px;
 .location{
   width: 150px;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -778,6 +780,29 @@ flex-direction: column;
 }
 .getAcALL form input {
   margin-bottom: 10px;
+}
+
+.filterIconBox{
+  display: flex;
+}
+.offterBox{
+  width: 100%;
+}
+.offer{
+  flex-direction: column;
+}
+.offterBox{
+  overflow: scroll;
+}
+.spacialOfferWrapper{
+  overflow: scroll;
+}
+.spacialOfferWrapper{
+  height: inherit;
+}
+.offterBox{
+  height: auto;
+  overflow: scroll;
 }
 }
 

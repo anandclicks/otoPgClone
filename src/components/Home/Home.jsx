@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Navbar from './Navbar'
-
 import Prasence from './Prasence'
 import HeroOne from './HeroOne'
 import ShowCase from './ShowCase'
@@ -10,6 +9,15 @@ import SemiFooter from './SemiFooter'
 import { UserContext } from '../../Context provider/UserContext'
 import Footer from '../Footer/Footer'
 import GetCallForm from './GetCallForm'
+import SpacialOffter from './SpacialOffter'
+
+
+
+
+
+
+
+
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,6 +36,9 @@ const Home = () => {
   
   return (
     <>
+    {/* spacial offter element  */}
+    <SpacialOffter/>
+    {/* pg form  */}
     <div className={`pgFinderForm ${fromStatus? 'pgFinderFormVisible' : 'pgFinderFormInvisble'}`}>
     <i onClick={findPgFormHandler} className="fa-solid fa-xmark pgFindFormClose"></i>
    {/* title  */}
