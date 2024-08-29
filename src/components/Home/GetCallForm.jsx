@@ -41,7 +41,7 @@ const GetCallForm = () => {
       <i onClick={handleGetAcALLState} className="ri-close-large-line getCallFormCloseIcon"></i>
       <form onSubmit={getAcallBackApi}>
         <div>
-          <p>Your name</p>
+          <p className='inputTitle'>Your name</p>
           <input 
             onChange={handleChange} 
             type="text" 
@@ -52,7 +52,7 @@ const GetCallForm = () => {
           />
         </div>
         <div>
-          <p>Mobile Number</p>
+          <p className='inputTitle'>Mobile Number</p>
           <input 
             onChange={handleChange} 
             type="number" 
@@ -63,7 +63,7 @@ const GetCallForm = () => {
           />
         </div>
         <div>
-          <p>Email Address</p>
+          <p className='inputTitle'>Email Address</p>
           <input 
             onChange={handleChange} 
             type="email" 
@@ -73,7 +73,7 @@ const GetCallForm = () => {
           />
         </div>
         <div>
-          <p>Select Room Type</p>
+          <p className='inputTitle'>Select Room Type</p>
           <select 
             onChange={handleChange} 
             name="roomType" 

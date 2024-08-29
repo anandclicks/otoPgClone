@@ -867,7 +867,7 @@ a {
 .getAcALL form input {
   height: 60px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 8px;
   border: 1px solid #cacaca;
   font-size: 16px;
@@ -1713,4 +1713,7 @@ position: absolute;
   color: #10c200;
   font-size: 12px;
   font-weight: 400;
+}
+.inputTitle{
+  font-size: 14px;
 }
