@@ -168,10 +168,18 @@ width: 90%;
 .offterBox{
   width: 80%;
 }
-
-
-
-
+.nearBy::-webkit-scrollbar {
+  display: none;
+}
+.offerdips{
+  font-size: 12px;
+}
+.termsCondition li {
+  font-size: 12px;
+}
+.left .offterBox{
+  padding: 0px;
+}
 
 
 
@@ -315,6 +323,10 @@ width: 90%;
   .searchIconAndBtn{
     justify-content: end;
   }
+  .absolute{
+    top: 1900px;
+  }
+ 
 }
 
 
@@ -806,6 +818,28 @@ padding: 10px;
 .offterBox{
   height: auto;
   overflow: scroll;
+}
+.spacilaOFferbtnforMobile {
+border: none;
+  padding: 7px 20px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #00b7ef;
+
+  color: #FFF;
+  font-size: 12px;
+}
+.offer{
+  flex-direction: row;
+}
+.offterBox{
+  height: 100vh;
+  border-radius: 0px;
+}
+.spacilaOFferbtnforMobile{
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 }
 

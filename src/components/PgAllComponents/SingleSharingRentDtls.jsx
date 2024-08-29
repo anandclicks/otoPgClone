@@ -12,6 +12,7 @@ const SingleSharingRentDtls = (prop) => {
               {prop.singleSharingPrice ? `₹${prop.singleSharingPrice}/month` : 'Not Avalable'}
               </h3>
           </div>
+      
     </>
   ) 
 }

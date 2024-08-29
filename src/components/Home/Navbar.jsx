@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { UserContext } from '../../Context provider/UserContext'
 import GetCallForm from './GetCallForm'
+import SpcialOfferBtnForMobile from './SpcialOfferBtnForMobile'
 
 const Navbar = () => {
   const [menuStatus, setmenuStatus] = useState(false)
@@ -31,7 +32,8 @@ const Navbar = () => {
       <div className="Navlogo">
       <i onClick={navController} className="ri-menu-4-line menuBtn"></i>
         <img className='logoImg' src="\logo\OtoStaysDarkLogo.png" alt="" />
-        <i className="ri-user-line userIcon"></i>
+        {/* <i className="ri-user-line userIcon"></i> */}
+        <SpcialOfferBtnForMobile/>
       </div>
       {/* links  */}
       <div className="navLinks">

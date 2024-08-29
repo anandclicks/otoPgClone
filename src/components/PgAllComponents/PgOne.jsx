@@ -5,10 +5,19 @@ import TripleSharing from './TripleSharing'
 import HeaderTwo from './HeaderTwo'
 import { UserContext } from '../../Context provider/UserContext'
 import GetCallForm from '../Home/GetCallForm'
+import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 
 
 const PgOne = (prop) => {
+  const { spacialOffer, handleSpacialOfferPopup } = useContext(UserContext);
+  // State to track the active offer's terms visibility
+  const [activeOffer, setActiveOffer] = useState(null);
 
+  // Handle terms condition visibility
+  const handleTermsConditionToggle = (offerId) => {
+    setActiveOffer(prev => (prev === offerId ? null : offerId));
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -42,7 +51,7 @@ const PgOne = (prop) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition <= '1830') {
+      if (scrollPosition <= '1930') {
       
         setisFixed(true);
       } else {
@@ -74,7 +83,7 @@ const PgOne = (prop) => {
         {/* pgHeader  */}
         {/* quick links  */}
         <div className='quickLinksFroSmallDevice'>
-          <p className='linksContainer'><p className='activeLink '>Home</p><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
+          <p className='linksContainer'><Link to={'/'} className='activeLink '>Home</Link><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
         </div>
         <div className="pgHeader">
           <div className='pgHeaderLeft'>
@@ -119,6 +128,90 @@ const PgOne = (prop) => {
           <h2 className='aboutPgtTitle'>About the <span>Property</span></h2>
           <p className='AboutPgDips'>Oto Gem ,fully furnished rooms with benefits from its distinguished location as it offers good connectivity via bus and railway Station .Situated in a location which is conveniently close to hotels, markets and main IT parks additionally with specta</p>
         </div>
+        <div className="offterBox">
+        {/* Offer 1 */}
+        <div className="offer">
+          <div className="image">
+            <img src="\Amenties Svg\offter1.svg" alt="" />
+          </div>
+          <div className="offterInfo">
+            <div className="offertitle">
+              <h3>Discount Upto 10%</h3>
+            </div>
+            <div className="offerdips">
+              <p>"If a customer signs a 6-month agreement with us, we can offer a 10% discount. This would apply to double-sharing accommodations."</p>
+            </div>
+            <div onClick={handleGetAcALLState} className="offerApplay">
+              Applay
+            </div>
+            <div onClick={() => handleTermsConditionToggle(1)} className={`termsCondition ${activeOffer === 1 ? 'termsConditionVisible' : ''}`}>
+              <span>terms and conditions.</span>
+              {activeOffer === 1 && (
+                <ul>
+                  <li>Minimum stay of 6 months required.</li>
+                  <li>Payment: 2 months' rent + 1 month’s security deposit.</li>
+                  <li>Early exit: ₹2,000 will be deducted from the security deposit, plus any additional charges.</li>
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* Offer 2 */}
+        <div className="offer">
+          <div className="image">
+            <img src="\Amenties Svg\offter2.svg" alt="" />
+          </div>
+          <div className="offterInfo">
+            <div className="offertitle">
+              <h3>Discount Upto 50%</h3>
+            </div>
+            <div className="offerdips">
+              <p>"Sign a 6-month double-sharing lease to get 50% off the first month’s rent. Pay 2 months' rent plus 1 month’s security deposit. No other discounts subject to terms and conditions."</p>
+            </div>
+            <div onClick={handleGetAcALLState} className="offerApplay">
+              Applay
+            </div>
+            <div onClick={() => handleTermsConditionToggle(2)} className={`termsCondition ${activeOffer === 2 ? 'termsConditionVisible' : ''}`}>
+              <span>terms and conditions.</span>
+              {activeOffer === 2 && (
+                <ul>
+                  <li>You must have Double Sharing</li>
+                  <li>Minimum stay of 6 months required.</li>
+                  <li>Payment: 2 months' rent + 1 month’s security deposit.</li>
+                  <li>Early exit: ₹2,000 will be deducted from the security deposit, plus any additional charges.</li>
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* Offer 3 */}
+        <div className="offer">
+          <div className="image">
+            <img src="\Amenties Svg\offter3.svg" alt="" />
+          </div>
+          <div className="offterInfo">
+            <div className="offertitle">
+              <h3>Discount Upto 100%</h3>
+            </div>
+            <div className="offerdips">
+              <p>"OTO Stays is offering a promotion where customers can fill in their details and participate in a lucky draw held on the 30th or 31st of each month. The draw will be based on the number of vacant beds in a property. The winner will receive a free stay for the first month, but some terms and conditions will apply."</p>
+            </div>
+            <div onClick={handleGetAcALLState} className="offerApplay">
+              Applay
+            </div>
+            <div onClick={() => handleTermsConditionToggle(3)} className={`termsCondition ${activeOffer === 3 ? 'termsConditionVisible' : ''}`}>
+              <span>terms and conditions.</span>
+              {activeOffer === 3 && (
+                <ul>
+                  <li>Minimum stay of 6 months required.</li>
+                  <li>Payment: 2 months' rent + 1 month’s security deposit.</li>
+                  <li>Early exit: ₹2,000 will be deducted from the security deposit, plus any additional charges.</li>
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
         {/* rooms dtls  */}
         <div className="roomDtls">
           <h2 className='roomDtlsTitle'>Room <span>Details</span></h2>
@@ -263,6 +356,7 @@ const PgOne = (prop) => {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

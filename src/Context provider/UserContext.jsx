@@ -74,7 +74,7 @@ const handleRange = (value) => {
   for (let i = 0; i < AllPgDetails.length; i++) {
     const element = AllPgDetails[i];
     if (numericValue < element.doubleSharingPrice && element.doubleSharingPrice < 20000) {
-      console.log(element.pgTitle, element.doubleSharingPrice);
+     
       filteredData.push(element);
     }
   }
@@ -89,7 +89,7 @@ const handleRange = (value) => {
   // get a call form handling
   const [getACallState, setgetACallState] = useState(false)
   const handleGetAcALLState = ()=> {
-    console.log(getACallState)
+   
     setgetACallState(prev => !prev)
   }
   

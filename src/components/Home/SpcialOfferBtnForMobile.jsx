@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../../Context provider/UserContext'
 
 const SpcialOfferBtnForMobile = () => {
+  const {handleSpacialOfferPopup} =useContext(UserContext)
   return (
-    <div className='spacilaOFferbtnforMobile'>
-      Offer
+    <div onClick={handleSpacialOfferPopup} className='spacilaOFferbtnforMobile '>
+     <i class="fa-solid fa-gift"></i> New Offer
     </div>
   )
 }
