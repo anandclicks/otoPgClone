@@ -39,6 +39,9 @@ width: 90%;
 .mainWrapperDiv{
   overflow: scroll;
 }
+.mainWrapperDiv::-webkit-scrollbar {
+  display: none;
+}
 .sectionTitle {
   font-size: 20px;
 }
