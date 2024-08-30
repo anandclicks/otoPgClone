@@ -60,16 +60,16 @@ evt.preventDefault()
     // API call logic here
   };
 
-  const { fromStatus, findPgFormHandler } = useContext(UserContext);
+  const { fromStatus, findPgFormHandler,spacialOffer } = useContext(UserContext);
 
   return (
     <>
     {/* loading  */}
+    <img className='spacialOffer' src="\logo\spacialOffer.png" alt="" />
     <div className="loadingDiv">
       <img src="\reqest send\succesfull.gif" alt="" />
     </div>
       <SpacialOffter />
-
       <div className={`pgFinderForm ${fromStatus ? 'pgFinderFormVisible' : 'pgFinderFormInvisble'}`}>
         <i onClick={findPgFormHandler} className="fa-solid fa-xmark pgFindFormClose"></i>
         

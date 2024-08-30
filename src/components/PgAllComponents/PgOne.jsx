@@ -71,9 +71,9 @@ const PgOne = (prop) => {
     <HeaderTwo/>
     <div className='pgMain'>
       <div className="btnsForMobile">
-        <div className="Schedul">
+        <Link to={'https://wa.me/7415051778'} className="Schedul">
         <i className="fa-brands fa-square-whatsapp whatsappIcon"></i> Schedule Visit
-        </div>
+        </Link>
         <div onClick={handleGetAcALLState} className="selectRoom">
           Select Room
         </div>
@@ -254,9 +254,7 @@ const PgOne = (prop) => {
             <div className="Facelity">
               <img className='AmentiImg' src="\Amenties Svg\parking_icon.svg" alt="" /> <p className='AmentiName'>Parking</p>
             </div>
-            <div className="Facelity">
-            <img className='AmentiImg' src="\Amenties Svg\tv_icon.svg" alt="" /> <p className='AmentiName'>TV</p>
-            </div>
+        
             <div className="Facelity">
             <img className='AmentiImg' src="\Amenties Svg\wifi_icon.svg" alt="" /> <p className='AmentiName'>Wifi</p>
             </div>

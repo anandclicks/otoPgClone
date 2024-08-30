@@ -906,7 +906,7 @@ a {
 .spacialOffer{
   position: relative;
 }
-.spacialOffer::after {
+/* .spacialOffer::after {
   height: 22px;
   width: 22px;
   display: flex;
@@ -925,11 +925,20 @@ a {
   right: 0;
   animation: offerAnimation 1s infinite alternate ;
   transition: 1s ease-in-out;
+} */
+
+.spacialOffer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  margin: 70px;
+  backdrop-filter: blur(0px 0px 10px #850808);
 }
 
-
-
-
+.headerTwoLoginIcon {
+  width: 36px;
+}
 
 
 
@@ -1263,7 +1272,7 @@ text-align: center;
 .propertyImages{
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .sharingOption{
   display: flex;

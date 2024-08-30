@@ -177,7 +177,9 @@ width: 90%;
 .termsCondition li {
   font-size: 12px;
 }
-
+.headerTwoLoginIcon {
+  margin-top: 10px;
+}
 
 
 
@@ -731,6 +733,7 @@ padding: 10px;
 /* hedaer two css  */
 .headerTwo{
   padding: 0 10px;
+  
 }
 .forLargeScreen{
   display: none;
@@ -830,7 +833,7 @@ border: none;
   flex-direction: row;
 }
 .offterBox{
-  height: 100vh;
+  height: 90vh;
   border-radius: 0px;
 }
 .spacilaOFferbtnforMobile{

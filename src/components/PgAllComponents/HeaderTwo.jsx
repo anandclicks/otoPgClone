@@ -38,7 +38,8 @@ const HeaderTwo = () => {
       Get a Call
      </div>
      <div className="signUpIonOnMobile">
-     <i className="fa-solid fa-right-to-bracket"></i>
+     {/* <i className="fa-solid fa-right-to-bracket"></i> */}
+     <img className='headerTwoLoginIcon' src="/logo\login-screen.svg" alt="" />
      </div>
 
     </div>
