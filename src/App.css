@@ -1742,7 +1742,12 @@ position: absolute;
   flex-wrap: wrap;
   margin-top: 15px;
 }
-
+.left .offterBox{
+  padding: 0px;
+}
+button {
+  cursor: pointer;
+}
 
 
 
