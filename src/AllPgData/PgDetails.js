@@ -162,7 +162,7 @@ export const AllPgDetails = [
 },
 {
   id : 8, 
-  pageUrl : '',
+  pageUrl : '/noida/oto-Township-sector73',
   pgTitle : 'OTO Township ',
   pgLocation : 'Oto township sector 73 gali no 2   sarafabad nearby A square mall',
   mapUrl : 'https://www.google.com/maps?q=28.589872,77.3807466&z=17&hl=en',

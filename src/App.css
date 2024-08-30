@@ -495,6 +495,7 @@
   width: 60%;
   background-color: #ffffff;
   position: fixed;
+  overflow: scroll;
   left: 0;
   top: 0;
   z-index: 99;
@@ -538,9 +539,10 @@
   border-radius: 10px;
   border: 1px solid #00000046;
   margin-top: 20px;
+  padding: 15px;
 }
 .inputBox{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .pgFinderForm input:focus {
   outline: 1px solid #00afef62;
@@ -1734,7 +1736,12 @@ position: absolute;
   width: 100px;
   border-radius: 50%;
 }
-
+.allProperties{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
 
 
 
