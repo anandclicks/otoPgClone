@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       {/* links  */}
       <div className="navLinks">
-        <Link >List Property</Link>
+        <Link onClick={handleGetAcALLState}>List Property</Link>
         <Link to={'/noida'}>Explore pg</Link>
         <a href='tel:+917415051778'><i className="ri-phone-fill"></i> +91 7415051778</a>
         <a href='mailto: info@otostays.com'><i className="ri-mail-line"></i> info@otostays.com</a>

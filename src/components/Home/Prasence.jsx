@@ -18,7 +18,7 @@ const Prasence = () => {
         <h4 className='cityNameofCard'>Noida</h4>
       </Link>
       {/* delhi  */}
-      <div className="WrapperDiv">
+      <div className="WrapperDiv commingSoon">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\delhi.svg" alt="" />
@@ -30,7 +30,7 @@ const Prasence = () => {
         <h4 className='cityNameofCard '>Delhi</h4>
       </div>
       {/* gurugram  */}
-      <div className="WrapperDiv">
+      <div className="WrapperDiv commingSoon">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\gurugram.svg" alt="" />
@@ -42,7 +42,7 @@ const Prasence = () => {
         <h4 className='cityNameofCard gurugram'>Gurugram</h4>
       </div>
       {/* ghaziabad noida  */}
-      <div className="WrapperDiv">
+      <div className="WrapperDiv commingSoon">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\ghaziabad.svg" alt="" />
@@ -54,7 +54,7 @@ const Prasence = () => {
         <h4 className='cityNameofCard gurugram'>Ghaziabad</h4>
       </div>
       {/* greater noida  */}
-      <div className="WrapperDiv">
+      <div className="WrapperDiv commingSoon">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\greaternoida.svg" alt="" />

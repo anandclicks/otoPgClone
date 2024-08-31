@@ -12,6 +12,7 @@ import GetCallForm from './GetCallForm';
 import SpacialOffter from './SpacialOffter';
 import axios from 'axios';
 
+
 const Home = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +21,6 @@ const Home = () => {
     location: '',
     specificProperty: '',
   });
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -60,12 +60,12 @@ evt.preventDefault()
     // API call logic here
   };
 
-  const { fromStatus, findPgFormHandler,spacialOffer } = useContext(UserContext);
+  const { fromStatus, findPgFormHandler,handleSpacialOfferPopup } = useContext(UserContext);
 
   return (
     <>
     {/* loading  */}
-    <img className='spacialOffer' src="\logo\spacialOffer.png" alt="" />
+    <img onClick={handleSpacialOfferPopup} className='spacialOffer' src="https://ratlamitadka.com/wp-content/uploads/offer-1.gif" alt="" />
     <div className="loadingDiv">
       <img src="\reqest send\succesfull.gif" alt="" />
     </div>

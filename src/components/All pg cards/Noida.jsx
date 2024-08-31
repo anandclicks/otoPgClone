@@ -151,6 +151,7 @@ const Noida = () => {
             </div>
             {/* all cards */}
             <div className="allPgCards">
+              <img className='requestAcallBanner' src="\logo\callBackBnner.png" alt="" />
               <Card />
             </div>
           </div>

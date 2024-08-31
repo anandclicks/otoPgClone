@@ -5,7 +5,7 @@ const SpcialOfferBtnForMobile = () => {
   const {handleSpacialOfferPopup} =useContext(UserContext)
   return (
     <div onClick={handleSpacialOfferPopup} className='spacilaOFferbtnforMobile '>
-     <i class="fa-solid fa-gift"></i> New Offer
+     <i class="fa-solid fa-gift"></i> 
     </div>
   )
 }

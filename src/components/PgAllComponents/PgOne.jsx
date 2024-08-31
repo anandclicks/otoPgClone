@@ -7,6 +7,7 @@ import { UserContext } from '../../Context provider/UserContext'
 import GetCallForm from '../Home/GetCallForm'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
+import Pgsuggestion from '../Home/Pgsuggestion'
 
 
 const PgOne = (prop) => {
@@ -83,7 +84,7 @@ const PgOne = (prop) => {
         {/* pgHeader  */}
         {/* quick links  */}
         <div className='quickLinksFroSmallDevice'>
-          <p className='linksContainer'><Link to={'/'} className='activeLink '>Home</Link><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>Oto Gem </p></p>
+          <p className='linksContainer'><Link to={'/'} className='activeLink '>Home</Link><i className="activeLink fa-solid fa-chevron-right"></i><p className='activeLink '>Noida</p><i className="activeLink fa-solid fa-chevron-right"></i><p>{prop.pgTitle}</p></p>
         </div>
         <div className="pgHeader">
           <div className='pgHeaderLeft'>
@@ -128,6 +129,7 @@ const PgOne = (prop) => {
           <h2 className='aboutPgtTitle'>About the <span>Property</span></h2>
           <p className='AboutPgDips'>Oto Gem ,fully furnished rooms with benefits from its distinguished location as it offers good connectivity via bus and railway Station .Situated in a location which is conveniently close to hotels, markets and main IT parks additionally with specta</p>
         </div>
+        {/* offers  */}
         <div className="offterBox">
         {/* Offer 1 */}
         <div className="offer">
@@ -354,6 +356,7 @@ const PgOne = (prop) => {
         </div>
       </div>
     </div>
+    <Pgsuggestion/>
     <Footer/>
     </>
   )

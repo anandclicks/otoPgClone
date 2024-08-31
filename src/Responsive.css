@@ -293,6 +293,7 @@ width: 90%;
   .pgImageContainer{
     height: 380px;
   }
+
   .Amenties{
     height: 300px;
   }
@@ -324,6 +325,9 @@ width: 90%;
   }
   .absolute{
     top: 1900px;
+  }
+  .suggestionWrapper{
+    padding: 0 4%;
   }
  
 }
@@ -833,13 +837,25 @@ border: none;
   flex-direction: row;
 }
 .offterBox{
-  height: 90vh;
+  height: 100vh;
   border-radius: 0px;
 }
 .spacilaOFferbtnforMobile{
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.pgSuggesation{
+  width: 350%;
+}
+.spacialOffer{
+  margin: 10px;
+} 
+.pgImageContainer .offterBox{
+  height: 90vh !important;
+}
+.roomDtlsTitle {
+  margin-top: 0;
 }
 }
 
