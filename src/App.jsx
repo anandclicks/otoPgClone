@@ -8,6 +8,10 @@ import { UserContext, UserContextProvider } from './Context provider/UserContext
 import { Route, Routes } from 'react-router-dom'
 import { AllPgDetails } from './AllPgData/PgDetails'
 import Noida from './components/All pg cards/Noida'
+import Delhi from './components/All pg cards/Delhi'
+import Gururgram from './components/All pg cards/Gurugram'
+import Ghaziabad from './components/All pg cards/Ghaziabad'
+import GreaterNoida from './components/All pg cards/GreaterNoida'
 // import AllPgDetails from './AllPgData/PgDetails'
 
 
@@ -26,6 +30,7 @@ function App() {
         <Route index path='/' element={<><Home/></>}/>
         {/* all pg route  */}
         <Route path='/noida' element={<><Noida/></>} />
+        
         {/* pg route  */}
         <Route path='/noida/oto-capital'
                element={<>
@@ -293,6 +298,11 @@ function App() {
                         distanceFromPgThree={AllPgDetails[13].distanceFromPgThree}
                         />
                         </>} />
+                        {/* delhi routing  */}
+                        <Route path='/delhi' element={<><Delhi/></>}/>
+                        <Route path='/Gurugram' element={<><Gururgram/></>}/>
+                        <Route path='/ghaziabad' element={<><Ghaziabad/></>}/>
+                        <Route path='/greater-noida' element={<><GreaterNoida/></>}/>
       </Routes>
     </UserContextProvider>
     

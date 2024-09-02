@@ -580,9 +580,8 @@
   cursor: pointer;
 }
 /* noida all pg  */
-.NoidaAllPgMain{
+.NoidaAllPgMain, .DelhiAllPgMain{
   height: 100vh;
-
 }
 .filterSide{
   height: 100%;
@@ -688,7 +687,7 @@ align-items: center;
   border-radius: 8px;
   cursor: pointer;
 }
-.NoidaAllPgMain{
+.NoidaAllPgMain, .DelhiAllPgMain{
   display: flex;
 }
 .pgCardSide{
@@ -932,20 +931,27 @@ a {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 60px;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
   margin: 70px;
- filter: drop-shadow(0px 0px 15px #ff0101);
+ background-color: #00AEEF;
+ font-size: 14px;
+ gap: 5px;
+ color: #fff;
  cursor: pointer;
  z-index: 9;
+ 
  animation: offer 1s infinite;
 }
 @keyframes offer {
   0% {
-    filter: drop-shadow(0px 0px 15px #ff0101);
+    filter: drop-shadow(0px 0px 50px #0084ff);
   }
-  100% {
-    filter: blur(0px 0px 15px #0084ff98);
-  }
+
 }
 .headerTwoLoginIcon {
   width: 36px;
@@ -1800,5 +1806,60 @@ button {
 }
 
 .requestAcallBanner{
+  width: 100%;
+  border: 2px solid #00AEEF;
+}
+.propertyNotFountMain{
+ align-items: center;
+  display: flex;
+}
+.notFountImg, .notFoundForm{
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.notFoundForm form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.notFoundForm input {
+  height: 50px;
+  width: 400px;
+  border: 1px solid #b8b8b8;
+  padding: 0px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.placeholderOFform{
+  font-size: 13px;
+}
+.notFoundForm button {
+  height: 45px;
+  border-radius: 8px;
+  width: 120px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00AEEF;
+  color: #fff;
+  border: none;
+
+}
+.dipsOFnOfoundForm {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.notFoundForm h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.notFountImg img {
   width: 100%;
 }

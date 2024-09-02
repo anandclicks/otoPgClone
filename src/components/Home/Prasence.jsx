@@ -18,7 +18,7 @@ const Prasence = () => {
         <h4 className='cityNameofCard'>Noida</h4>
       </Link>
       {/* delhi  */}
-      <div className="WrapperDiv commingSoon">
+      <Link to={'/delhi'} className="WrapperDiv">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\delhi.svg" alt="" />
@@ -28,9 +28,9 @@ const Prasence = () => {
           </div>
         </div>
         <h4 className='cityNameofCard '>Delhi</h4>
-      </div>
+      </Link>
       {/* gurugram  */}
-      <div className="WrapperDiv commingSoon">
+      <Link to={'/gurugram'} className="WrapperDiv">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\gurugram.svg" alt="" />
@@ -40,9 +40,9 @@ const Prasence = () => {
           </div>
         </div>
         <h4 className='cityNameofCard gurugram'>Gurugram</h4>
-      </div>
+      </Link>
       {/* ghaziabad noida  */}
-      <div className="WrapperDiv commingSoon">
+      <Link to={'/ghaziabad'} className="WrapperDiv">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\ghaziabad.svg" alt="" />
@@ -52,9 +52,9 @@ const Prasence = () => {
           </div>
         </div>
         <h4 className='cityNameofCard gurugram'>Ghaziabad</h4>
-      </div>
+      </Link>
       {/* greater noida  */}
-      <div className="WrapperDiv commingSoon">
+      <Link to={'/greater-noida'} className="WrapperDiv">
       <div className='hoverMain'>
           <div className='first '>
             <img className='' src="\cityimages\citypng\greaternoida.svg" alt="" />
@@ -64,7 +64,7 @@ const Prasence = () => {
           </div>
         </div>
         <h4 className='cityNameofCard greaterNoida'>Greater Noida</h4>
-      </div>
+      </Link>
     </div>
     </div>
   )

@@ -857,6 +857,15 @@ border: none;
 .roomDtlsTitle {
   margin-top: 0;
 }
+.propertyNotFountMain{
+  flex-direction: column;
+}
+.notFountImg, .notFoundForm {
+  width: 100%;
+}
+.notFoundForm input {
+  width:100% ;
+}
 }
 
 

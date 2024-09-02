@@ -8,7 +8,7 @@ const Memory = () => {
         <div className="box">
           <h3>Let’s make som</h3>
           <h4><span>Memories!</span></h4>
-<div className="btn">Zo-Tales</div>
+<div className="btn">OTO-ales</div>
         </div>
       </div>
     </div>

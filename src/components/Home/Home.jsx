@@ -65,7 +65,7 @@ evt.preventDefault()
   return (
     <>
     {/* loading  */}
-    <img onClick={handleSpacialOfferPopup} className='spacialOffer' src="https://ratlamitadka.com/wp-content/uploads/offer-1.gif" alt="" />
+    <div className='spacialOffer' onClick={handleSpacialOfferPopup}><i class="ri-gift-line"></i>Offter</div>
     <div className="loadingDiv">
       <img src="\reqest send\succesfull.gif" alt="" />
     </div>

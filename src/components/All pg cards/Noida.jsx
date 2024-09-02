@@ -146,7 +146,7 @@ const Noida = () => {
                 <Link to={'/'}><span>Home<i className="ri-arrow-drop-right-line"></i></span></Link>Noida
               </div>
               <h3 className="noidaAllPgHeading">
-                Showing {dataForMap.length} properties in <span>Noida</span>
+                Showing properties in <span>Noida</span>
               </h3>
             </div>
             {/* all cards */}
