@@ -4,7 +4,7 @@ import { UserContext } from '../../Context provider/UserContext'
 
 
 
-const HeaderTwo = () => {
+const HeaderTwo = (prop) => {
   const {handleGetAcALLState} = useContext(UserContext)
   return (
     <div className='headerTwo'>
@@ -14,11 +14,11 @@ const HeaderTwo = () => {
       {/* hedaer two middel searchbox */}
       <div className='optionsAndSearchWrapper forLargeScreen'>
       <select className="CityListBtn">
-        <option >Nodia</option>
-        <option>Delhi</option>
-        <option>Gururgram</option>
-        <option>Greater Noida</option>
-        <option>Ghaziabad</option>
+        <option>{prop.activeLink}</option>
+        <option><Link to={'/delhi'}>Delhi</Link></option>
+        <option><Link to={'/gurugram'}>Gururgram</Link></option>
+        <option><Link to={'greater-Noida'}>Greater Noida</Link></option>
+        <option><Link to={'/ghaziabad'}>Ghaziabad</Link></option>
       </select>
       {/* this is for fc  */}
       <div className="searchbox forLargeScreen">

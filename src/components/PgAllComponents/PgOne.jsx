@@ -69,7 +69,7 @@ const PgOne = (prop) => {
   return (
     <>
     <GetCallForm/>
-    <HeaderTwo/>
+    <HeaderTwo activeLink={'Noida'}/>
     <div className='pgMain'>
       <div className="btnsForMobile">
         <Link to={'https://wa.me/7415051778'} className="Schedul">

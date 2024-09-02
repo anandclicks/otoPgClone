@@ -51,7 +51,7 @@ const Ghaziabad = () => {
 
   return (
     <>
-      <HeaderTwo />
+      <HeaderTwo activeLink={"Ghaziabad"} />
       <GetCallForm/>
       <div className='DelhiAllPgMain container'>
         {/* filter navbar title */}

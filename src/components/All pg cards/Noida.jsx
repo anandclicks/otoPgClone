@@ -50,7 +50,7 @@ const Noida = () => {
 
   return (
     <>
-      <HeaderTwo />
+      <HeaderTwo activeLink={"Noida"} />
       <GetCallForm/>
       <div className='NoidaAllPgMain container'>
         {/* filter navbar title */}
