@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../../Context provider/UserContext';
 
 const Footer = () => {
+  const { handleGetAcALLState } = useContext(UserContext);
   return (
     <div className='footer'>
       <div className="firstPart footerParts">
@@ -20,11 +22,10 @@ const Footer = () => {
         <div className="footerLinkTitleAndLink">
           <h3>Useful links</h3>
           <ul>
-            <Link><i className="ri-arrow-right-line"></i> Home</Link>
-            <Link><i className="ri-arrow-right-line"></i> About Us</Link>
-            <Link><i className="ri-arrow-right-line"></i> Blog</Link>
-            <Link><i className="ri-arrow-right-line"></i> All PG for you</Link>
-            <Link><i className="ri-arrow-right-line"></i> Book pg</Link>
+            <Link to={'/'}><i className="ri-arrow-right-line"></i> Home</Link>
+            <Link to={'/noida'}><i className="ri-arrow-right-line"></i> Go to Noida's PG</Link>
+            <Link to={'/noida'}><i className="ri-arrow-right-line"></i> All PG for you</Link>
+            <Link onClick={handleGetAcALLState}><i className="ri-arrow-right-line"></i> Book pg</Link>
           </ul>
         </div>
       </div>
@@ -32,11 +33,11 @@ const Footer = () => {
       <div className="footerLinkTitleAndLink">
           <h3>Explore PG</h3>
           <ul>
-            <Link><i className="ri-arrow-right-line"></i> PG in Delhi</Link>
-            <Link><i className="ri-arrow-right-line"></i> PG in Noida</Link>
-            <Link><i className="ri-arrow-right-line"></i> PG in Gurugram</Link>
-            <Link><i className="ri-arrow-right-line"></i> PG in Greater Noida</Link>
-            <Link><i className="ri-arrow-right-line"></i> PG in Ghaziabad</Link>
+            <Link to={'/noida'}><i className="ri-arrow-right-line"></i> PG in Noida</Link>
+            <Link to={'/delhi'}><i className="ri-arrow-right-line"></i> PG in Delhi</Link>
+            <Link to={'/gurugram'}><i className="ri-arrow-right-line"></i> PG in Gurugram</Link>
+            <Link to={'/greater-noida'}><i className="ri-arrow-right-line"></i> PG in Greater Noida</Link>
+            <Link to={'/ghaziabad'}><i className="ri-arrow-right-line"></i> PG in Ghaziabad</Link>
           </ul>
         </div>
       </div>
