@@ -11,10 +11,10 @@ const Footer = () => {
           <img src="/logo/OtoStaysDarkLogo.png" alt="" />
           <p className='footerDips'>You know, when we go out of our home to the city in search of studies and jobs, we get everything very easily but we do not get a happy home.Follow us at</p>
           <div className="footericons">
-          <i className="ri-instagram-line"></i>
-          <i className="ri-facebook-line"></i>
-          <i className="ri-twitter-x-line"></i>
-          <i className="ri-linkedin-line"></i>
+         <Link to={'https://www.instagram.com/otostays6/'}> <i className="ri-instagram-line"></i></Link>
+          <Link to={'https://www.facebook.com/OTOstays'}><i className="ri-facebook-line"></i></Link>
+          <Link to={'https://x.com/i/flow/login?redirect_after_login=%2FOtoStays'}><i className="ri-twitter-x-line"></i></Link>
+         <Link to={'https://www.linkedin.com/company/otostays/'}><i className="ri-linkedin-line"></i></Link>
           </div>
         </div>
       </div>
@@ -48,7 +48,8 @@ const Footer = () => {
           <i className="ri-focus-3-line"></i>
           <div className='footerLastScTitle'>
             <h4>Address</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Nearby Radha public
+            school Nearby - Esi hospital Sector 22 Noida</p>
           </div>
           </div>
           <div className='footerLastBox'>

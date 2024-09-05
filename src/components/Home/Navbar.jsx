@@ -8,6 +8,12 @@ const Navbar = () => {
   const [menuStatus, setmenuStatus] = useState(false)
   const navController = ()=> {
     setmenuStatus(prev => !prev)
+    if(!menuStatus) {
+      document.body.style.overflow = 'hidden';
+    }
+    else {
+      document.body.style.overflow = 'auto';
+    }
   }
   // get a call function getting 
   const {handleGetAcALLState,handleSpacialOfferPopup} = useContext(UserContext)
