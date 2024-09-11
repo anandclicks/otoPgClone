@@ -29,7 +29,7 @@ const Navbar = () => {
      <a className="text-decoration-none text-white" href="https://www.linkedin.com/company/otostays/"><i className="fa-brands fa-linkedin"></i></a>
  </div>
  <div className="btns">
-   <Link to={"/noida"} className="bgPrimery">See All PG's <i className="text-white ri-arrow-right-up-line"></i></Link>
+   <Link onClick={navController} to={"/noida"} className="bgPrimery">See All PG's <i className="text-white ri-arrow-right-up-line"></i></Link>
    <button onClick={handleGetAcALLState} className="addProperty">Get A call <i className="text-white ri-add-circle-fill"></i></button>
  </div>
 </div>

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Card from './Card';
 import { UserContext } from '../../Context provider/UserContext';
 import GetCallForm from '../Home/GetCallForm';
+import Footer from '../Footer/Footer';
+
 
 const Noida = () => {
   useEffect(() => {
@@ -157,6 +159,7 @@ const Noida = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
